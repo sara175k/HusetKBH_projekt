@@ -12,7 +12,7 @@
          <template data-template>
             <article class="postListview">
              <h2 data-title></h2>
-             <p data-text></p>
+             <div data-text> </div>
              </article>
          </template>
 
@@ -24,7 +24,7 @@
        let postTemplate = document.querySelector("[data-template]");
        let postContainer = document.querySelector("[data-container]");
 async function getJSON(){
-    let jsonData = await fetch("http://mabe-kea.dk/huset18/wordpress/wp-json/wp/v2/posts");
+    let jsonData = await fetch("http://sarahjane.dk/kea/2.semester/huset/wordpress/wp-json/wp/v2/musikevents");
     posts = await jsonData.json();
     visPosts();
 }
