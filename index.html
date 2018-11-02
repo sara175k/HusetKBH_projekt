@@ -9,13 +9,13 @@
 
 <header>
 
-   <img>
+    <img>
 
 </header>
 
 
 <body>
-<?php include "header.html"; ?>
+    <?php include "header.html"; ?>
 
     <main>
         <section class="container" data-container>
@@ -34,6 +34,15 @@
 
     </main>
 
+<<<<<<< HEAD
+=======
+    <form>
+        <input id="navn" type="text" placeholder="Dit navn" required>
+        <input type="submit" value="tilmeld"><span id="response"></span>
+
+    </form>
+
+>>>>>>> origin/master
 
     <script>
         document.addEventListener("DOMContentLoaded", getJSON);
@@ -56,9 +65,9 @@
                 postContainer.appendChild(klon);
             })
         }
-
     </script>
+
+    <?php include "footer.html"; ?>
 </body>
 
-<?php include "footer.html"; ?>
 </html>
