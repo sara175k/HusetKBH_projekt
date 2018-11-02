@@ -1,7 +1,14 @@
+/* BASIC */
+
 body{
     width: 100%;
     height: 100%;
 }
+
+
+
+/* MENU */
+
 .navbar {
     overflow: hidden;
     background-color: #333;
@@ -204,4 +211,15 @@ body{
 
 .dropdown4:hover .dropdown-content-kontakt {
     display: block;
+}
+
+
+/* GRID - virker ikke */
+
+.container-data {
+    display: grid;
+}
+
+.container {
+    grid-template-columns: repeat(3, 2fr);
 }
