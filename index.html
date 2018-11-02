@@ -104,7 +104,6 @@
         document.querySelector("form").addEventListener("submit", visdata)
         function visdata(e){
             e.preventDefault();
-            console.log(document.querySelector("#navn").value());
         }
 
         let svartekst ="";
@@ -113,7 +112,7 @@
         async function ajaxCall(e){
             e.preventDefault();
             let navn= this.querySelector("input[type=text]").value;
-            let url="formtest1.php?navn" + navn;
+            let url="formtest1.php?navn=" + navn;
             let svar = await fetch(url);
             svartekst = await svar.text();
             show();
