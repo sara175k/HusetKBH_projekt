@@ -2,29 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <?php include "header.html"; ?>
 
-   <main>
-    <section class="container" data-container>
+    <main>
+        <section class="container" data-container>
 
-    </section>
+        </section>
 
 
-         <template data-template>
+        <template data-template>
             <article class="postListview">
-             <h2 data-title></h2>
-             <div data-text> </div>
-             </article>
-         </template>
+                <h2 data-title></h2>
+                <div data-text> </div>
+            </article>
+        </template>
 
 
-   </main>
+    </main>
 
 
-   <style>
+    <style>
 
 
 
@@ -34,25 +36,26 @@
 
 
 
-   <script>
-   document.addEventListener("DOMContentLoaded", getJSON);
-   let posts;
-       let postTemplate = document.querySelector("[data-template]");
-       let postContainer = document.querySelector("[data-container]");
-async function getJSON(){
-    let jsonData = await fetch("http://sarahjane.dk/kea/2.semester/huset/wordpress/wp-json/wp/v2/musikevents");
-    posts = await jsonData.json();
-    visPosts();
-}
-       function visPosts(){
-           console.log(posts);
-           posts.forEach(post =>{
-               let klon = postTemplate.cloneNode(true).content;
-               klon.querySelector("[data-title]").textContent = post.title.rendered;
-               klon.querySelector("[data-text]").innerHTML = post.content.rendered;
-               postContainer.appendChild(klon);
-           })
-       }
+    <script>
+        document.addEventListener("DOMContentLoaded", getJSON);
+        let posts;
+        let postTemplate = document.querySelector("[data-template]");
+        let postContainer = document.querySelector("[data-container]");
+        async function getJSON() {
+            let jsonData = await fetch("http://sarahjane.dk/kea/2.semester/huset/wordpress/wp-json/wp/v2/musikevents");
+            posts = await jsonData.json();
+            visPosts();
+        }
+
+        function visPosts() {
+            console.log(posts);
+            posts.forEach(post => {
+                let klon = postTemplate.cloneNode(true).content;
+                klon.querySelector("[data-title]").textContent = post.title.rendered;
+                klon.querySelector("[data-text]").innerHTML = post.content.rendered;
+                postContainer.appendChild(klon);
+            })
+        }
     </script>
 </body>
 
