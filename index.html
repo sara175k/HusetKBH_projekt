@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
-
-
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Huset KBH</title>
 </head>
 
+<header>
+
+   <img>
+
+</header>
 
 
 <body>
 <?php include "header.html"; ?>
-<?php include "footer.html"; ?>
 
     <main>
         <section class="container" data-container>
@@ -31,53 +33,11 @@
 
     </main>
 
-
-
     <form>
    <input id="navn" type="text" placeholder="Dit navn" required>
     <input type="submit" value="tilmeld"><span id="response"></span>
 
     </form>
-
-    <style>
-
-    header{background-color: coral;}
-    main{background-color: aqua;}
-    footer{background-color: cadetblue}
-    header, main, footer{ border: solid 2px coral; padding: 20px;}
-
-
-        form{
-            width:"100%";
-            background-color: antiquewhite;
-            padding: 2%;
-        }
-        input{
-            width: 40%;
-            border: solid 2px black;
-            padding: 2%; margin: 2%;
-            font-size: 1.5em;
-        }
-
-        textarea{
-            width: 95%; height: 200px;
-        }
-
-        input[type=submit]{
-            width: 120px; background-color: chocolate; color: antiquewhite;
-        }
-        input[type=email]:focus {
-            background-color: red;
-        }
-        input[type=text]:hover{
-        background-color: pink;
-        }
-
-
-    </style>
-
-
-
 
 
     <script>
@@ -86,7 +46,7 @@
         let postTemplate = document.querySelector("[data-template]");
         let postContainer = document.querySelector("[data-container]");
         async function getJSON() {
-            let jsonData = await fetch("http://sarahjane.dk/kea/2.semester/huset/wordpress/wp-json/wp/v2/musikevents");
+            let jsonData = await fetch("http://sarahjane.dk/kea/2.semester/huset/wordpress/wp-json/wp/v2/multiple-post-type?&type[]=musikevents&type[]=filmevents&type[]=ord&type[]=scenekunstner&type[]=andet");
             posts = await jsonData.json();
             visPosts();
         }
@@ -100,28 +60,6 @@
                 postContainer.appendChild(klon);
             })
         }
-
-        document.querySelector("form").addEventListener("submit", visdata)
-        function visdata(e){
-            e.preventDefault();
-        }
-
-        let svartekst ="";
-        document.querySelector("form").addEventListener("submit", ajaxCall);
-
-        async function ajaxCall(e){
-            e.preventDefault();
-            let navn= this.querySelector("input[type=text]").value;
-            let url="formtest1.php?navn=" + navn;
-            let svar = await fetch(url);
-            svartekst = await svar.text();
-            show();
-            this.querySelector("input[type=text]").value ="";
-        }
-        function show(reponse){
-            document.querySelector("#response").textContent = svartekst
-        }
-
 
     </script>
 </body>
