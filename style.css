@@ -223,3 +223,8 @@ body{
 .container {
     grid-template-columns: repeat(3, 2fr);
 }
+/*************************************************/
+a.evoo_link{
+    color: red;
+    font-size: 2vw;
+}
