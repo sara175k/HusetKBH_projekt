@@ -62,13 +62,12 @@
                 klon.querySelector("[data-dato]").innerHTML = post.acf.dato;
                 klon.querySelector("[data-tid]").innerHTML = post.acf.tid;
                 klon.querySelector("[data-text]").innerHTML = post.content.rendered;
-                klon.querySelector("[data-tid]").innerHTML = post.acf.sted;
+                klon.querySelector("[data-sted]").innerHTML = post.acf.sted;
                 klon.querySelector("[data-event]").innerHTML = post.acf.event;
                 klon.querySelector("[data-billede]").src = post.acf.billede.url;
                 postContainer.appendChild(klon);
             })
         }
-
     </script>
 
     <?php include "footer.html"; ?>
