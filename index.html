@@ -19,15 +19,19 @@
 
     <main>
 
-       <section class="container-data">
-        <div class="container" data-container>
-        </div>
+        <section class="container-data">
+            <div class="container" data-container>
+            </div>
         </section>
 
         <template data-template>
             <article class="postListview">
                 <h2 data-title></h2>
-                <div data-text> </div>
+                <div data-text></div>
+                <div data-event></div>
+                <div data-tid></div>
+                <div data-dato></div>
+                <div data-sted></div>
                 <img data-billede>
             </article>
         </template>
@@ -53,8 +57,12 @@
             posts.forEach(post => {
                 let klon = postTemplate.cloneNode(true).content;
                 klon.querySelector("[data-title]").textContent = post.title.rendered;
+                klon.querySelector("[data-dato]").innerHTML = post.acf.dato;
+                klon.querySelector("[data-tid]").innerHTML = post.acf.tid;
                 klon.querySelector("[data-text]").innerHTML = post.content.rendered;
-                klon.querySelector("[data-billede]").src = post.featured_media.rendered;
+                klon.querySelector("[data-tid]").innerHTML = post.acf.sted;
+                klon.querySelector("[data-event]").innerHTML = post.acf.event;
+                klon.querySelector("[data-billede]").src = post.acf.billede.url;
                 postContainer.appendChild(klon);
             })
         }
