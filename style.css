@@ -239,10 +239,9 @@ p{
 
 }
 
-h1, h3, h4{
+h1, h2, h3, h4{
     padding: 10px;
-    outline-color: aqua;
-    outline-style: double;
+
     text-align: center;
 
 }
@@ -309,7 +308,6 @@ ul.balsalen{
 
 
 @media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
   .timeline::after {
     left: 31px;
   }
@@ -321,6 +319,7 @@ ul.balsalen{
   }
 
 }
+
 
 
 
