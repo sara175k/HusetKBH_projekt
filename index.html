@@ -15,7 +15,7 @@
     <?php include "header.html"; ?>
     <header>
 
-        <img src="splash.png" alt=splash>
+        <img src="mobile_landscape.png" alt=splash>
 
     </header>
     <main>
@@ -25,16 +25,26 @@
         </section>
 
         <template data-template>
-            <article class="postListview">
-                <h2 data-title></h2>
-                <img data-billede>
-                <div data-text></div>
-                <div data-event></div>
-                <div data-tid></div>
-                <div data-dato></div>
-                <div data-sted></div>
+            <div class="postlistviewparent">
+                <article class="postListview">
+                    <div class="box">
+                        <h2 data-title></h2>
 
-            </article>
+                        <img data-billede>
+                    </div>
+                    <div class="box">
+                        <div data-text></div>
+                        <b>Eventtype</b>
+                        <div data-event></div>
+                        <b>Tid</b>
+                        <div data-tid></div>
+                        <b>Dato</b>
+                        <div data-dato></div>
+                        <b>Sted</b>
+                        <div data-sted></div>
+                    </div>
+                </article>
+            </div>
         </template>
     </main>
 
