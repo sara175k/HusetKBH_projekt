@@ -16,6 +16,86 @@ a.link {
     color: rgb(211 7 42);
 }
 
+/*PICTURE*/
+
+#picture{
+ border-radius: 50%;
+    padding: 200px;
+}
+
+
+
+}
+
+
+/*admin*/
+#admin{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+#admin h2{
+        text-align: center;
+    margin-top: 50px;
+    font-size: 26px;
+    color: black;
+    line-height: 1.2;
+    letter-spacing: 6px;
+    width: 100%;
+    position: relative;
+        font-weight: 400;}
+
+#admin p{
+    text-align: center;
+    font-size: 14px;
+    width: 250px;
+    margin: 30px auto;
+    color: #a4a4a4;
+    line-height: 26px;
+    letter-spacing: 0;
+    position: relative;
+    font-weight: 300;
+
+}
+
+#admin .1{
+    margin-top: 40px;
+    width: 300px;
+    float: left;
+    margin-bottom: 70px;
+    height: 350px;
+}
+#admin .4, .7, .10, .13, .16{
+    margin-top: 40px;
+    width: 300px;
+    float: left;
+    margin-bottom: 70px;
+    height: 350px;
+}
+
+#admin .2, .5, .8, .11, .14{
+     margin-top: 40px;
+    width: 300px;
+    float: left;
+    margin-bottom: 70px;
+    height: 350px;
+}
+
+
+#admin .3 .6 .9 .12, .15{
+      margin-top: 40px;
+    width: 300px;
+    float: left;
+    margin-bottom: 70px;
+    height: 350px;
+}
+
+/*DONE*/
+
+
 
 /* MENU */
 
@@ -133,6 +213,48 @@ a.link {
 
 /*-------------------------------------------------------------------*/
 
+.dropdown_events{
+    float: left;
+    overflow: hidden;
+}
+.dropdown_events .dropbtn_events{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown_events:hover, dropbtn_events{
+    background-color: red;
+}
+
+.dropdown-content-events{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content-events a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content-events a:hover{
+    background-color: #ddd;
+}
+.dropdown_events:hover .dropdown-content-events{
+    display: block;
+}
+/******************************/
 .dropdown3 {
     float: left;
     overflow: hidden;
