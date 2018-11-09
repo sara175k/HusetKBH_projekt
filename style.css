@@ -1,9 +1,8 @@
 /* BASIC */
 
 body {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(223 242 253)
+    background-color: rgb(223, 242, 253);
+
 }
 
 img {
@@ -18,8 +17,8 @@ a.link {
 
 /*PICTURE*/
 
-#picture{
- border-radius: 50%;
+#picture {
+    border-radius: 50%;
     padding: 200px;
 }
 
@@ -28,7 +27,7 @@ a.link {
 
 
 /*admin*/
-#admin{
+#admin {
     position: relative;
     width: 1000px;
     margin: 0 auto;
@@ -36,8 +35,8 @@ a.link {
 }
 
 
-#admin h2{
-        text-align: center;
+#admin h2 {
+    text-align: center;
     margin-top: 50px;
     font-size: 26px;
     color: black;
@@ -45,9 +44,10 @@ a.link {
     letter-spacing: 6px;
     width: 100%;
     position: relative;
-        font-weight: 400;}
+    font-weight: 400;
+}
 
-#admin p{
+#admin p {
     text-align: center;
     font-size: 14px;
     width: 250px;
@@ -60,14 +60,7 @@ a.link {
 
 }
 
-#admin .1{
-    margin-top: 40px;
-    width: 300px;
-    float: left;
-    margin-bottom: 70px;
-    height: 350px;
-}
-#admin .4, .7, .10, .13, .16{
+#admin .1 {
     margin-top: 40px;
     width: 300px;
     float: left;
@@ -75,8 +68,24 @@ a.link {
     height: 350px;
 }
 
-#admin .2, .5, .8, .11, .14{
-     margin-top: 40px;
+#admin .4,
+.7,
+.10,
+.13,
+.16 {
+    margin-top: 40px;
+    width: 300px;
+    float: left;
+    margin-bottom: 70px;
+    height: 350px;
+}
+
+#admin .2,
+.5,
+.8,
+.11,
+.14 {
+    margin-top: 40px;
     width: 300px;
     float: left;
     margin-bottom: 70px;
@@ -84,8 +93,9 @@ a.link {
 }
 
 
-#admin .3 .6 .9 .12, .15{
-      margin-top: 40px;
+#admin .3 .6 .9 .12,
+.15 {
+    margin-top: 40px;
     width: 300px;
     float: left;
     margin-bottom: 70px;
@@ -212,11 +222,12 @@ a.link {
 
 /*-------------------------------------------------------------------*/
 
-.dropdown_events{
+.dropdown_events {
     float: left;
     overflow: hidden;
 }
-.dropdown_events .dropbtn_events{
+
+.dropdown_events .dropbtn_events {
     font-size: 16px;
     border: none;
     outline: none;
@@ -227,11 +238,13 @@ a.link {
     margin: 0;
 }
 
-.navbar a:hover, .dropdown_events:hover, dropbtn_events{
+.navbar a:hover,
+.dropdown_events:hover,
+dropbtn_events {
     background-color: red;
 }
 
-.dropdown-content-events{
+.dropdown-content-events {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -239,7 +252,8 @@ a.link {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
-.dropdown-content-events a{
+
+.dropdown-content-events a {
     float: none;
     color: black;
     padding: 12px 16px;
@@ -247,12 +261,15 @@ a.link {
     display: block;
     text-align: left;
 }
-.dropdown-content-events a:hover{
+
+.dropdown-content-events a:hover {
     background-color: #ddd;
 }
-.dropdown_events:hover .dropdown-content-events{
+
+.dropdown_events:hover .dropdown-content-events {
     display: block;
 }
+
 /******************************/
 .dropdown3 {
     float: left;
@@ -353,6 +370,7 @@ a.link {
 
 /* GRID - virker ikke */
 
+/*
 .container-data {
     display: grid;
 }
@@ -360,6 +378,7 @@ a.link {
 .container {
     grid-template-columns: repeat(3, 2fr);
 }
+*/
 
 /*************************************************/
 a.evoo_link {
@@ -379,9 +398,8 @@ h2,
 h3,
 h4 {
     padding: 10px;
-
     text-align: center;
-
+    font-family: verdana, sans-serif
 }
 
 ul.balsalen {
@@ -391,9 +409,11 @@ ul.balsalen {
 
 /*--------------------------------------------------*/
 
+/*
     {
     box-sizing: border-box;
 }
+???*/
 
 
 
@@ -407,9 +427,8 @@ ul.balsalen {
 
 
 .container {
-    padding: 10px 40px;
     position: relative;
-    width: 50%;
+    width: 100%;
 }
 
 
@@ -445,6 +464,7 @@ ul.balsalen {
 }
 
 
+/* der nok problemer med den..
 @media screen and (max-width: 600px) {
     .timeline::after {
         left: 31px;
@@ -458,32 +478,52 @@ ul.balsalen {
 
 }
 
+*/
 
 
 
 
-/* alexander's css for index
+/*
+ alexander's css for index
 
+*/
 
 @media screen and (max-width:768px) {
     .postListview {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-        margin-top: 5%;
-
+        background-color: white;
+        padding: 1em;
+        border: 3px solid rgb(36, 25, 93);
+        border-radius: 1em;
+        margin-bottom: 3em;
     }
+
     .box {
-        margin-left: 2%;
-        margin-right: 2%;
-        padding-left: 2%;
-        padding-right: 2%;
         flex-grow: 1;
-        flex-basis: 300px;
-        background-color: rgba(153, 153, 153, 0.5);
+        flex-basis: 768px;
     }
 }
 
-@media screen and (min-width:860px) {}
+@media screen and (min-width:768px) {
+    body {
+        margin-left: 10em;
+        margin-right: 10em;
+    }
 
-*/
+    .postListview {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: white;
+        padding: 1em;
+        border: 3px solid rgb(36, 25, 93);
+        border-radius: 1em;
+        margin-bottom: 2em;
+    }
+
+    .box {
+        flex-grow: 1;
+        flex-basis: 600px;
+        margin-bottom: 1em;
+        padding: 3em;
+    }
