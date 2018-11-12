@@ -1,7 +1,7 @@
 /* BASIC */
 
 body {
-    background-color: white;
+    background-color: #EDF8FE;
     font-family: 'Lato', sans-serif;
 }
 
@@ -26,24 +26,6 @@ table {
 #picture {
     border-radius: 50%;
 
-}
-
-
-article {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1em;
-    border-radius: 1em;
-    margin-bottom: 3em;
-}
-
-.box {
-    flex-grow: 1;
-    flex-basis: 768px;
-}
-
-.kategorier {
-    padding: 1em;
 }
 
 
@@ -147,7 +129,14 @@ article {
 .navbar {
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
-    outline-style: dashed;
+
+    padding: 20px;
+          text-align: center;
+          margin-top: 50px;
+          font-size: 26px;
+          color: black;
+          line-height: 1.2;
+          font-weight: 400;
 }
 
 
@@ -216,7 +205,6 @@ article {
 
 .navbar a:hover,
 .dropdown1:hover .dropbtn_om {
-    background-color: red;
 }
 
 .dropdown-content-om {
@@ -264,7 +252,6 @@ article {
 
 .navbar a:hover,
 .dropdown2:hover .dropbtn_lokaler {
-    background-color: red;
 }
 
 .dropdown-content-lokaler {
@@ -314,7 +301,6 @@ article {
 .navbar a:hover,
 .dropdown_events:hover,
 dropbtn_events {
-    background-color: red;
 }
 
 .dropdown-content-events {
@@ -362,7 +348,6 @@ dropbtn_events {
 
 .navbar a:hover,
 .dropdown3:hover .dropbtn_stillinger {
-    background-color: red;
 }
 
 .dropdown-content-stillinger {
@@ -411,7 +396,6 @@ dropbtn_events {
 
 .navbar a:hover,
 .dropdown4:hover .dropbtn_kontakt {
-    background-color: red;
 }
 
 .dropdown-content-kontakt {
@@ -549,8 +533,7 @@ input[type=checkbox] {
 
 
 input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
+    color: black;
     border: none;
 }
 
