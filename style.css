@@ -35,6 +35,8 @@ table {
 
 }
 
+<<<<<<< HEAD
+=======
 
 
 
@@ -61,6 +63,7 @@ article {
 
 
 
+>>>>>>> origin/master
 /*admin*/
 
 /*
@@ -74,16 +77,16 @@ article {
 
 */
 
-admin h2 {
+#admin h2 {
     text-align: center;
     margin-top: 50px;
     font-size: 26px;
     color: black;
     line-height: 1.2;
     letter-spacing: 6px;
-    width: 100%;
     position: relative;
     font-weight: 400;
+
 }
 
 #admin p {
@@ -184,12 +187,28 @@ admin h2 {
 
 
 /*TABLET NAV*/
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/master
 @media (min-width: 767px) and (max-width: 1023px) {
     .navbar {
         padding-left: 100px;
     }
-}
 
+    #admin_picture {
+        width: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: left;
+        margin-right: 2em;
+    }
+
+    #admin h2 {
+        float: inherit;
+    }
+}
 
 /*PC NAV*/
 @media (min-width: 1024px) {
@@ -466,11 +485,14 @@ h4 {
     font-family: verdana, sans-serif
 }
 
+<<<<<<< HEAD
+=======
 /*--------------------------------------------------*/
 h2 {
     padding-left: 46px;
 }
 
+>>>>>>> origin/master
 h2 {
     padding-left: 46px;
 }
