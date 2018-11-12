@@ -39,6 +39,11 @@ p {
     padding-right: 20px;
 }
 
+p,
+.kategorier {
+    font-size: 0.9em;
+}
+
 .kategorier {
     padding-left: 20px;
     padding-bottom: 20px
