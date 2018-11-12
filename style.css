@@ -2,14 +2,10 @@
 
 body {
     background-color: white;
+    font-family: 'Lato', sans-serif;
 }
 
-body,
-h1,
-h2 {
-    font-family: verdana, sans;
 
-}
 
 img {
     max-width: 100%;
@@ -20,9 +16,6 @@ iframe {
     max-width: 100%;
 }
 
-a.link {
-    color: rgb(211 7 42);
-}
 
 table {
     margin-left: 2em;
@@ -34,13 +27,6 @@ table {
     border-radius: 50%;
 
 }
-
-<<<<<<< HEAD
-=======
-
-
-
-
 
 
 article {
@@ -63,7 +49,6 @@ article {
 
 
 
->>>>>>> origin/master
 /*admin*/
 
 /*
@@ -107,9 +92,7 @@ article {
     border: 2px solid black;
 }
 
-#admin .16 {
-    border: 2px solid black;
-}
+
 
 /*
 #admin .1 {
@@ -165,8 +148,6 @@ article {
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
     outline-style: dashed;
-
-
 }
 
 
@@ -187,10 +168,7 @@ article {
 
 
 /*TABLET NAV*/
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 @media (min-width: 767px) and (max-width: 1023px) {
     .navbar {
         padding-left: 100px;
@@ -219,7 +197,7 @@ article {
 
 
 
-/******************************************************************/
+/*NAV*/
 .dropdown1 {
     float: left;
     overflow: hidden;
@@ -464,17 +442,7 @@ dropbtn_events {
 
 
 /*************************************************/
-a.evoo_link {
-    color: red;
-    font-size: 2vw;
-}
 
-
-p {
-    padding: 10px;
-    margin: 20px;
-
-}
 
 /*
 h1,
@@ -485,22 +453,10 @@ h4 {
     font-family: verdana, sans-serif
 }
 
-<<<<<<< HEAD
-=======
 /*--------------------------------------------------*/
-h2 {
-    padding-left: 46px;
-}
-
->>>>>>> origin/master
-h2 {
-    padding-left: 46px;
-}
 
 
-ul.balsalen {
-    margin: 10px;
-}
+
 
 
 
@@ -622,52 +578,4 @@ input[type=submit]:hover {
 
 
 
-/*
-mediaquery - mobil
-*/
 
-@media screen and (max-width:750px) {
-    article {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .box {
-        flex-basis: 750px;
-        flex-grow: 1;
-    }
-}
-
-/*    mediaquery tablet */
-
-@media screen and (max-width:2048px) {
-    article {
-        display: flex;
-        flex-wrap: nowrap;
-    }
-
-    /*
-mediaquery - desktop
-*/
-    @media screen and (min-width: 750px) {
-        main {
-            margin-left: 10em;
-            margin-right: 10em;
-            padding-top: 30px;
-        }
-
-        article {
-            display: flex;
-            flex-wrap: nowrap;
-
-            padding: 1em;
-            border-radius: 1em;
-            margin-bottom: 2em;
-        }
-
-        .box {
-            flex-grow: 1;
-            flex-basis: 600px;
-            margin-bottom: 1em;
-            padding: 3em;
-        }
