@@ -29,10 +29,6 @@ table {
 
 }
 
-
-
-
-
 /*admin*/
 
 /*
@@ -46,16 +42,16 @@ table {
 
 */
 
-admin h2 {
+#admin h2 {
     text-align: center;
     margin-top: 50px;
     font-size: 26px;
     color: black;
     line-height: 1.2;
     letter-spacing: 6px;
-    width: 100%;
     position: relative;
     font-weight: 400;
+
 }
 
 #admin p {
@@ -73,7 +69,7 @@ admin h2 {
 
 #admin_picture {
     width: 100%;
-     border: 2px solid black;
+    border: 2px solid black;
 }
 
 #admin .16 {
@@ -150,24 +146,35 @@ admin h2 {
 
 
 /*MOBIL NAV*/
-@media (min-width: 360px) and (max-width:766px){
-    .navbar{
-
-    }
+@media (min-width: 360px) and (max-width:766px) {
+    .navbar {}
 }
 
 
 /*TABLET NAV*/
-@media (min-width: 767px) and (max-width: 1023px){
-    .navbar{
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .navbar {
         padding-left: 100px;
+    }
+
+    #admin_picture {
+        width: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: left;
+        margin-right: 2em;
+    }
+
+    #admin h2 {
+        float: inherit;
     }
 }
 
-
 /*PC NAV*/
 @media (min-width: 1024px) {
-    .navbar{
+    .navbar {
         padding-left: 105px;
     }
 }
@@ -438,7 +445,8 @@ h4 {
     text-align: center;
     font-family: verdana, sans-serif
 }
-h2{
+
+h2 {
     padding-left: 46px;
 }
 
@@ -471,7 +479,7 @@ ul.balsalen {
     width: 100%;
     outline-color: gray;
     outline-width: thin;
-    outline-style:dashed;
+    outline-style: dashed;
     padding-top: .2em
 }
 
@@ -521,7 +529,8 @@ form {
 }
 
 
-input[type=text], input[type=submit] {
+input[type=text],
+input[type=submit] {
     width: 100%;
     padding: 12px;
     margin: 8px 0;
