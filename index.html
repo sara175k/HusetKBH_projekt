@@ -13,22 +13,9 @@
 
 <body>
     <?php include "header.html"; ?>
-    <!--
-    <header>
 
-                <img src="mobile_landscape.png" alt=splash>
-        <section id="splash">
-            <picture>
-                <source media="(min-width: 1920px) and (orientation: landscape)" srcset="splash_1920x1080.jpg">
-                <source media="(min-width: 768px)and (orientation: landscape)" srcset="splash_768x1024.jpg">
-                <source media="(min-width: 375px) and (orientation: landscape)" srcset="splash_627x375.jpg">
-                <img src="splash_627x375.jpg" alt="splash" style="width:100%;">
-            </picture>
-        </section>
-    </header>
--->
-
-    <!-- indsæt koden til et responsive image her.
+    <section id="splash">
+        <!-- indsæt koden til et responsive image her.
              Brug de fem billeder
              * mobile_portrait.jpg  375x627
              * mobile_landscape.jpg 627x375
@@ -36,16 +23,20 @@
              * tablet_landscape.jpg 1024x768
              * desktop.jpg          1920x1080
         -->
-
-    <div class="splash">
         <picture>
-            <source media="(min-width:1920px) and (orientation: landscape)" srcset="">
-            <source media="(min-width:1024px) and (orientation: landscape)" srcset="images/tablet_landscape.jpg">
-            <source media="(min-width:768px) and (orientation: portrait)" srcset="images/tablet_portrait.jpg">
-            <source media="(min-width:627px) and (orientation: landscape)" srcset="images/mobile_landscape.jpg">
-            <source media="(min-width: 375px) and (orientation: portrait)" srcset="images/mobile_portrait.jpg">
-            <img src="images/mobile_portrait.jpg" alt="mobile portrait" style="width: 100%;">
+            <source media="(min-width:1920px) and (orientation: landscape)" srcset="splash/desktop.jpg">
+            <source media="(min-width:1024px) and (orientation: landscape)" srcset="splash/tablet.jpg">
+            <source media="(min-width:627px) and (orientation: landscape)" srcset="splash/mobile.jpg">
+            <img src="splash/mobile.jpg" alt="splash" style="width: 100%;">
         </picture>
+    </section>
+    <div class="splash">
+    </div>
+
+
+
+    <div class="filter">
+        <!--    sæt filter her-->
     </div>
 
 
@@ -55,30 +46,28 @@
             <div class="container" data-container>
             </div>
         </section>
-
         <template data-template>
-            <div class="postlistviewparent">
-                <article class="postListview">
-                    <div class="box">
-                        <h2 data-title></h2>
-                        <img data-billede>
-                    </div>
-                    <div class="box">
+            <article class="postListview">
+                <div class="box">
+                    <h2 data-title></h2>
+                    <img data-billede>
+                </div>
+                <div class="box">
 
-                        <div data-text></div>
-                        <div class="kategorier">
-                            <b>Eventtype</b>
-                            <div data-event></div>
-                            <b>Tid</b>
-                            <div data-tid></div>
-                            <b>Dato</b>
-                            <div data-dato></div>
-                            <b>Sted</b>
-                            <div data-sted></div>
-                        </div>
+                    <div data-text></div>
+                    <div class="kategorier">
+                        <b>Eventtype</b>
+                        <div data-event></div>
+                        <b>Tid</b>
+                        <div data-tid></div>
+                        <b>Dato</b>
+                        <div data-dato></div>
+                        <b>Sted</b>
+                        <div data-sted></div>
                     </div>
-                </article>
-            </div>
+                </div>
+            </article>
+
         </template>
     </main>
 
@@ -110,8 +99,5 @@
             })
         }
     </script>
-
-
 </body>
-
 </html>
