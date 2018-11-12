@@ -7,7 +7,26 @@
 </head>
 
 <body>
-    <footer>  </footer>
+    <footer>
+    <form action="action_page.php">
+  <div class="container">
+    <h2>Huset KBHs nyhedsbrev</h2>
+    <p>Hold dig opdateret på de nyeste events og info.</p>
+  </div>
+
+  <div class="container" style="background-color:white">
+    <input type="text" placeholder="Navn" name="name" required>
+    <input type="text" placeholder="Email-adresse" name="mail" required>
+    <label><br><br>
+      <input type="checkbox" checked="checked" name="subscribe"> Nyhedsbrev
+    </label>
+  </div>
+<br>
+  <div class="container">
+    <input type="submit" value="Tilmeld dig">
+  </div>
+</form>
+    </footer>
 
 </body>
 </html>
