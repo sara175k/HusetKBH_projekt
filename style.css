@@ -1,7 +1,13 @@
 /* BASIC */
 
 body {
-    background-color: rgb(223, 242, 253);
+    background-color: white;
+}
+
+body,
+h1,
+h2 {
+    font-family: verdana, sans;
 
 }
 
@@ -22,6 +28,28 @@ a.link {
     padding: 200px;
 }
 
+
+
+
+
+
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 3em;
+}
+
+.box {
+    flex-grow: 1;
+    flex-basis: 768px;
+}
+
+.kategorier {
+    padding: 1em;
+}
 
 
 
@@ -393,6 +421,7 @@ p {
 
 }
 
+/*
 h1,
 h2,
 h3,
@@ -401,6 +430,7 @@ h4 {
     text-align: center;
     font-family: verdana, sans-serif
 }
+*/
 
 ul.balsalen {
     margin: 10px;
@@ -484,46 +514,51 @@ ul.balsalen {
 
 
 /*
- alexander's css for index
-
+mediaquery - mobil
 */
 
-@media screen and (max-width:768px) {
-    .postListview {
+@media screen and (max-width:750px) {
+    article {
         display: flex;
         flex-wrap: wrap;
-        background-color: white;
-        padding: 1em;
-        border: 3px solid rgb(36, 25, 93);
-        border-radius: 1em;
-        margin-bottom: 3em;
     }
 
     .box {
+        flex-basis: 750px;
         flex-grow: 1;
-        flex-basis: 768px;
-    }
-}
-
-@media screen and (min-width:768px) {
-    body {
-        margin-left: 10em;
-        margin-right: 10em;
     }
 
-    .postListview {
-        display: flex;
-        flex-wrap: nowrap;
-        background-color: white;
-        padding: 1em;
-        border: 3px solid rgb(36, 25, 93);
-        border-radius: 1em;
-        margin-bottom: 2em;
-    }
 
-    .box {
-        flex-grow: 1;
-        flex-basis: 600px;
-        margin-bottom: 1em;
-        padding: 3em;
-    }
+    /*    mediaquery tablet */
+
+    @media screen and (max-width:2048px) {
+        article {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        /*
+mediaquery - desktop
+*/
+        @media screen and (min-width: 750px) {
+            main {
+                margin-left: 10em;
+                margin-right: 10em;
+                padding-top: 30px;
+            }
+
+            article {
+                display: flex;
+                flex-wrap: nowrap;
+
+                padding: 1em;
+                border-radius: 1em;
+                margin-bottom: 2em;
+            }
+
+            .box {
+                flex-grow: 1;
+                flex-basis: 600px;
+                margin-bottom: 1em;
+                padding: 3em;
+            }
