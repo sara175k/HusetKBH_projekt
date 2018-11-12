@@ -101,7 +101,7 @@ admin h2 {
 
 #admin_picture {
     width: 100%;
-     border: 2px solid black;
+    border: 2px solid black;
 }
 
 #admin .16 {
@@ -178,16 +178,14 @@ admin h2 {
 
 
 /*MOBIL NAV*/
-@media (min-width: 360px) and (max-width:766px){
-    .navbar{
-
-    }
+@media (min-width: 360px) and (max-width:766px) {
+    .navbar {}
 }
 
 
 /*TABLET NAV*/
-@media (min-width: 767px) and (max-width: 1023px){
-    .navbar{
+@media (min-width: 767px) and (max-width: 1023px) {
+    .navbar {
         padding-left: 100px;
     }
 }
@@ -195,7 +193,7 @@ admin h2 {
 
 /*PC NAV*/
 @media (min-width: 1024px) {
-    .navbar{
+    .navbar {
         padding-left: 105px;
     }
 }
@@ -467,20 +465,22 @@ h4 {
     text-align: center;
     font-family: verdana, sans-serif
 }
-<<<<<<< HEAD
-*/
-=======
-h2{
+
+/*--------------------------------------------------*/
+h2 {
     padding-left: 46px;
 }
->>>>>>> origin/master
+
+h2 {
+    padding-left: 46px;
+}
+
 
 ul.balsalen {
     margin: 10px;
 }
 
 
-/*--------------------------------------------------*/
 
 /*
     {
@@ -504,7 +504,7 @@ ul.balsalen {
     width: 100%;
     outline-color: gray;
     outline-width: thin;
-    outline-style:dashed;
+    outline-style: dashed;
     padding-top: .2em
 }
 
@@ -554,7 +554,8 @@ form {
 }
 
 
-input[type=text], input[type=submit] {
+input[type=text],
+input[type=submit] {
     width: 100%;
     padding: 12px;
     margin: 8px 0;
@@ -613,38 +614,38 @@ mediaquery - mobil
         flex-basis: 750px;
         flex-grow: 1;
     }
+}
 
+/*    mediaquery tablet */
 
-    /*    mediaquery tablet */
+@media screen and (max-width:2048px) {
+    article {
+        display: flex;
+        flex-wrap: nowrap;
+    }
 
-    @media screen and (max-width:2048px) {
+    /*
+mediaquery - desktop
+*/
+    @media screen and (min-width: 750px) {
+        main {
+            margin-left: 10em;
+            margin-right: 10em;
+            padding-top: 30px;
+        }
+
         article {
             display: flex;
             flex-wrap: nowrap;
+
+            padding: 1em;
+            border-radius: 1em;
+            margin-bottom: 2em;
         }
 
-        /*
-mediaquery - desktop
-*/
-        @media screen and (min-width: 750px) {
-            main {
-                margin-left: 10em;
-                margin-right: 10em;
-                padding-top: 30px;
-            }
-
-            article {
-                display: flex;
-                flex-wrap: nowrap;
-
-                padding: 1em;
-                border-radius: 1em;
-                margin-bottom: 2em;
-            }
-
-            .box {
-                flex-grow: 1;
-                flex-basis: 600px;
-                margin-bottom: 1em;
-                padding: 3em;
-            }
+        .box {
+            flex-grow: 1;
+            flex-basis: 600px;
+            margin-bottom: 1em;
+            padding: 3em;
+        }
