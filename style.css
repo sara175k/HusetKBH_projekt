@@ -44,7 +44,9 @@ table {
 }
 
 
-*/ admin h2 {
+*/
+
+admin h2 {
     text-align: center;
     margin-top: 50px;
     font-size: 26px;
@@ -55,8 +57,8 @@ table {
     position: relative;
     font-weight: 400;
 }
-/*
-*/ #admin p {
+
+#admin p {
     text-align: center;
     font-size: 14px;
     width: 250px;
