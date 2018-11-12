@@ -13,9 +13,10 @@
 
 <body>
     <?php include "header.html"; ?>
+    <!--
     <header>
 
-        <!--        <img src="mobile_landscape.png" alt=splash>-->
+                <img src="mobile_landscape.png" alt=splash>
         <section id="splash">
             <picture>
                 <source media="(min-width: 1920px) and (orientation: landscape)" srcset="splash_1920x1080.jpg">
@@ -25,6 +26,7 @@
             </picture>
         </section>
     </header>
+-->
 
     <main>
         <section class="container-data">
@@ -40,15 +42,18 @@
                         <img data-billede>
                     </div>
                     <div class="box">
+
                         <div data-text></div>
-                        <b>Eventtype</b>
-                        <div data-event></div>
-                        <b>Tid</b>
-                        <div data-tid></div>
-                        <b>Dato</b>
-                        <div data-dato></div>
-                        <b>Sted</b>
-                        <div data-sted></div>
+                        <div class="kategorier">
+                            <b>Eventtype</b>
+                            <div data-event></div>
+                            <b>Tid</b>
+                            <div data-tid></div>
+                            <b>Dato</b>
+                            <div data-dato></div>
+                            <b>Sted</b>
+                            <div data-sted></div>
+                        </div>
                     </div>
                 </article>
             </div>
