@@ -1,0 +1,49 @@
+/*
+mediaquery - mobil
+*/
+
+@media screen and (max-width:750px) {
+    article {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        flex-basis: 750px;
+        flex-grow: 1;
+    }
+}
+
+/*    mediaquery tablet */
+
+@media screen and (max-width:2048px) {
+    article {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    /*
+mediaquery - desktop
+*/
+    @media screen and (min-width: 750px) {
+        main {
+            margin-left: 10em;
+            margin-right: 10em;
+            padding-top: 30px;
+        }
+
+        article {
+            display: flex;
+            flex-wrap: nowrap;
+
+            padding: 1em;
+            border-radius: 1em;
+            margin-bottom: 2em;
+        }
+
+        .box {
+            flex-grow: 1;
+            flex-basis: 600px;
+            margin-bottom: 1em;
+            padding: 3em;
+        }
