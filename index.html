@@ -56,14 +56,14 @@
     </main>
 
 
-
+<?php include "footer.html"; ?>
     <script>
         document.addEventListener("DOMContentLoaded", getJSON);
         let posts;
         let postTemplate = document.querySelector("[data-template]");
         let postContainer = document.querySelector("[data-container]");
         async function getJSON() {
-            let jsonData = await fetch("http://sarahjane.dk/kea/2.semester/huset/wordpress/wp-json/wp/v2/multiple-post-type?&type[]=musikevents&type[]=filmevents&type[]=ord&type[]=scenekunstner&type[]=andet");
+            let jsonData = await fetch("http://sarahjane.dk/kea/2.semester/huset/wordpress/wp-json/wp/v2/multiple-post-type?&type[]=musikevents&type[]=filmevents&type[]=ord&type[]=scenekunst&type[]=andet");
             posts = await jsonData.json();
             visPosts();
         }
@@ -84,7 +84,7 @@
         }
     </script>
 
-    <?php include "footer.html"; ?>
+
 </body>
 
 </html>
