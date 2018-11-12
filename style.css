@@ -131,6 +131,8 @@ table {
 .navbar {
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
+    outline-style: dashed;
+
 
 }
 
@@ -143,6 +145,32 @@ table {
     padding: 14px 16px;
     text-decoration: none;
 }
+
+
+/*MOBIL NAV*/
+@media (min-width: 360px) and (max-width:766px){
+    .navbar{
+
+    }
+}
+
+
+/*TABLET NAV*/
+@media (min-width: 767px) and (max-width: 1023px){
+    .navbar{
+        padding-left: 100px;
+    }
+}
+
+
+/*PC NAV*/
+@media (min-width: 1024px) {
+    .navbar{
+        padding-left: 105px;
+    }
+}
+
+
 
 /******************************************************************/
 .dropdown1 {
