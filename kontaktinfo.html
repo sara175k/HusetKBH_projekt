@@ -6,7 +6,10 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Kontakt information</title>
     <style>
-        h2.kontakt, h4.kontakt{
+
+        /*MOBIL*/
+        @media (min-width: 360px) and (max-width:766px){
+           h2.kontakt, h4.kontakt{
              padding: 20px;
           text-align: center;
           margin-top: 50px;
@@ -38,6 +41,75 @@
             width: 106px;
             border: 0px;
         }
+        }
+
+        /*IPAD*/
+        @media (min-width: 767px) and (max-width: 1023px){
+            h2.kontakt, h4.kontakt{
+              padding: 20px;
+          text-align: center;
+          margin-top: 50px;
+          font-size: 26px;
+          color: black;
+          line-height: 1.2;
+          letter-spacing: 6px;
+          position: relative;
+          font-weight: 400;
+            }
+            p.kontakt{
+                text-align: center;
+            font-size: 14px;
+            width: 250px;
+            margin: 30px auto;
+            color: #a4a4a4;
+            line-height: 26px;
+            letter-spacing: 0;
+            position: relative;
+            font-weight: 300;
+            }
+            hr{
+              color: black;
+          margin-top: 30px;
+          background-color: black;
+          height: 1px;
+          width: 106px;
+          border: 0px;
+            }
+        }
+
+        /*PC*/
+        @media (min-width: 1024px){
+            h2.kontakt, h4.kontakt{
+             padding: 20px;
+
+                margin-top: 50px;
+                font-size: 26px;
+                color: black;
+                line-height: 1.2;
+                letter-spacing: 6px;
+                position: relative;
+                font-weight: 400;
+            }
+            p.kontakt{
+                width: 250px;
+                margin-left: 35px;
+                color: #a4a4a4;
+                line-height: 26px;
+                letter-spacing: 0;
+                position: relative;
+                font-weight: 300;color: black;
+          margin-top: 30px;
+          background-color: black;
+          height: 1px;
+          width: 106px;
+          border: 0px;
+            }
+            hr{
+ color: black; margin-top: 30px; background-color: black; height: 1px; width: 106px; border: 0px;
+            }
+        }
+
+
     </style>
 </head>
 
@@ -45,6 +117,7 @@
   <?php include "header.html"; ?>
 
    <section>
+   <a href="header.html"><img id="logo" src="favicon-32x32.png" alt="logo"></a>
     <a href="https://www.google.dk/maps/place/Huset-KBH,+R%C3%A5dhusstr%C3%A6de+13,+1466+K%C3%B8benhavn/@55.6763715,12.5747148,15z/data=!4m2!3m1!1s0x4652531164a3fb89:0xdb78617809263eb5">
     <img id="picture" src="kort_huset.png" alt="kort"></a>
 

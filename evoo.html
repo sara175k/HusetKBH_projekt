@@ -6,68 +6,144 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Evoo</title>
     <style>
+        /*MOBIL*/
 
-        h2.evoo, h3.evoo, h4.evoo{
-            padding: 20px;
-          text-align: center;
-          margin-top: 50px;
-          font-size: 26px;
-          color: black;
-          line-height: 1.2;
-          letter-spacing: 6px;
-          position: relative;
-          font-weight: 400;
+        @media (min-width: 360px) and (max-width:766px) {
+            h2.evoo,
+            h3.evoo,
+            h4.evoo {
+                padding: 20px;
+                text-align: center;
+                margin-top: 50px;
+                font-size: 26px;
+                color: black;
+                line-height: 1.2;
+                letter-spacing: 6px;
+                position: relative;
+                font-weight: 400;
+            }
+
+            p.evoo,
+            ul.evoo {
+                text-align: center;
+                font-size: 14px;
+                width: 250px;
+                margin: 30px auto;
+                color: #a4a4a4;
+                line-height: 26px;
+                letter-spacing: 0;
+                position: relative;
+                font-weight: 300;
+            }
+
+            hr {
+                color: black;
+                margin-top: 30px;
+                background-color: black;
+                height: 1px;
+                width: 106px;
+                border: 0px;
+            }
+
         }
 
-        p.evoo, ul.evoo{
-            text-align: center;
-            font-size: 14px;
-            width: 250px;
-            margin: 30px auto;
-            color: #a4a4a4;
-            line-height: 26px;
-            letter-spacing: 0;
-            position: relative;
-            font-weight: 300;
+        /*IPAD*/
+
+        @media (min-width: 767px) and (max-width: 1023px) {
+            h2.evoo,
+            h3.evoo,
+            h4.evoo {
+                padding: 20px;
+                text-align: center;
+                margin-top: 50px;
+                font-size: 26px;
+                color: black;
+                line-height: 1.2;
+                letter-spacing: 6px;
+                position: relative;
+                font-weight: 400;
+            }
+            p.evoo,
+            ul.evoo {
+                text-align: center;
+                font-size: 14px;
+                width: 250px;
+                margin: 30px auto;
+                color: #a4a4a4;
+                line-height: 26px;
+                letter-spacing: 0;
+                position: relative;
+                font-weight: 300;
+            }
+
+            hr {
+                color: black;
+                margin-top: 30px;
+                background-color: black;
+                height: 1px;
+                width: 106px;
+                border: 0px;
+            }
+
         }
 
-        hr{
-          color: black;
-            margin-top: 30px;
-            background-color: black;
-            height: 1px;
-            width: 106px;
-            border: 0px;
+        /*PC*/
+
+        @media (min-width: 1024px) {
+            h2.evoo,
+            h3.evoo,
+            h4.evoo {
+                padding: 20px;
+
+                margin-top: 50px;
+                font-size: 26px;
+                color: black;
+                line-height: 1.2;
+                letter-spacing: 6px;
+                position: relative;
+                font-weight: 400;
+            }
+
+            p.evoo,
+            ul.evoo {
+                width: 250px;
+                margin-left: 35px;
+                color: #a4a4a4;
+                line-height: 26px;
+                letter-spacing: 0;
+                position: relative;
+                font-weight: 300;
+            }
+
+            hr {
+                color: black;
+                margin-top: 30px;
+                background-color: black;
+                height: 1px;
+                width: 106px;
+                border: 0px;
+            }
         }
     </style>
 
 </head>
 
 <body>
- <?php include "header.html"; ?>
+    <?php include "header.html"; ?>
 
-  <section>
-   <img id="picture" src="evoo_632_408.jpg" alt="evoo">
-    <h2 class="evoo">evoo – street kitchen</h2>
-    <h3 class="evoo"> nordisk/italiensk street food</h3>
-    <p class="evoo">På første sal i Huset kan du stille sulten med italiensk street food lavet på lokale, økologiske råvarer. Du kan blandt andet sætte tænderne i en vegansk pizza, evoos take på polenta fries eller en focaccia sandwich med vegansk pålæg.<br><br>
+    <section>
+       <a href="header.html"><img id="logo" src="favicon-32x32.png" alt="logo"></a>
+        <img id="picture" src="evoo_632_408.jpg" alt="evoo">
+        <h2 class="evoo">evoo – street kitchen</h2>
+        <h3 class="evoo"> nordisk/italiensk street food</h3>
+        <p class="evoo">På første sal i Huset kan du stille sulten med italiensk street food lavet på lokale, økologiske råvarer. Du kan blandt andet sætte tænderne i en vegansk pizza, evoos take på polenta fries eller en focaccia sandwich med vegansk pålæg.<br><br> evoo – eller extra virgin olive oil – er flyttet ind i det gamle Spisehus’ køkken på første sal, og deler indgang med Bip Bip Bar Pop-Up. Gadekøkkenet trækker inspiration fra italienske og nordiske gourmettraditioner og tilbyder vegetariske alternativer til street food-klassikere som pizza og sandwich.<br><br> Take away-retterne er bestemt af sæsonen, og ingredienserne er udvalgt med fokus på klimavenlighed og økologi. evoo har bronzemærke i økologi med 30-60% af råvarerne fra økologiske kilder.<br><br> Bemærk at evoo er et street food-køkken uden spisepladser. Du er velkommen til at nyde maden i Husets gård eller ved bordene i Bastard Café eller Bip Bip Bar Pop-Up.</p>
 
-evoo – eller extra virgin olive oil – er flyttet ind i det gamle Spisehus’ køkken på første sal, og deler indgang med Bip Bip Bar Pop-Up. Gadekøkkenet trækker inspiration fra italienske og nordiske gourmettraditioner og tilbyder vegetariske alternativer til street food-klassikere som pizza og sandwich.<br><br>
+        <p class="evoo"><a href="http://evoo.dk/index.html">Læs mere om evoo</a> – street kitchen, og se menuen på evoos hjemmeside.</p>
 
-Take away-retterne er bestemt af sæsonen, og ingredienserne er udvalgt med fokus på klimavenlighed og økologi. evoo har bronzemærke i økologi med 30-60% af råvarerne fra økologiske kilder.<br><br>
-
-Bemærk at evoo er et street food-køkken uden spisepladser. Du er velkommen til at nyde maden i Husets gård eller ved bordene i Bastard Café eller Bip Bip Bar Pop-Up.</p>
-
-    <p class="evoo"><a href="http://evoo.dk/index.html">Læs mere om evoo</a> – street kitchen, og se menuen på evoos hjemmeside.</p>
-
-<h4 class="evoo">evoo – street kitchens åbningstider</h4>
-  <ul class="evoo">
-      Tirsdag: 12.00 - 15.00 og 17.00 - 22.00<br>
-      Onsdag: 12.00 - 15.00 og 17.00 - 22.00<br>
-      Torsdag: 12.00 - 15.00 og 17.00 - 22.00<br>
-      Fredag: 12.00 - 15.00 og 17.00 - 22.00<br>
-      Lørdag: 12.00 - 15.00 og 17.00 - 22.00
-  </ul>
+        <h4 class="evoo">evoo – street kitchens åbningstider</h4>
+        <ul class="evoo">
+            Tirsdag: 12.00 - 15.00 og 17.00 - 22.00<br> Onsdag: 12.00 - 15.00 og 17.00 - 22.00<br> Torsdag: 12.00 - 15.00 og 17.00 - 22.00<br> Fredag: 12.00 - 15.00 og 17.00 - 22.00<br> Lørdag: 12.00 - 15.00 og 17.00 - 22.00
+        </ul>
     </section>
 
     <?php include "footer.html"; ?>
