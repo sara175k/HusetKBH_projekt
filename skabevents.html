@@ -6,34 +6,107 @@
     <link rel="stylesheet" href="style.css">
     <title>Skab events</title>
     <style>
-
         /*MOBIL*/
-        @media (min-width: 360px) and (max-width:766px){
-            h2.skab, h4.skab{
-             padding: 20px;
-          text-align: center;
-          margin-top: 50px;
-          font-size: 26px;
-          color: black;
-          line-height: 1.2;
-          letter-spacing: 6px;
-          position: relative;
-          font-weight: 400;
+
+        @media (min-width: 360px) and (max-width:766px) {
+            h2.skab,
+            h4.skab {
+                padding: 20px;
+                text-align: center;
+                margin-top: 50px;
+                font-size: 26px;
+                color: black;
+                line-height: 1.2;
+                letter-spacing: 6px;
+                position: relative;
+                font-weight: 400;
+            }
+
+            p.skab {
+                text-align: center;
+                font-size: 14px;
+                width: 250px;
+                margin: 30px auto;
+                color: #a4a4a4;
+                line-height: 26px;
+                letter-spacing: 0;
+                position: relative;
+                font-weight: 300;
+            }
+
+            hr {
+                color: black;
+                margin-top: 30px;
+                background-color: black;
+                height: 1px;
+                width: 106px;
+                border: 0px;
+            }
+
         }
 
-        p.skab{
-            text-align: center;
-            font-size: 14px;
+        /*IPAD*/
+
+        @media (min-width: 767px) and (max-width: 1023px) {
+
+            h2.skab,
+            h4.skab {
+                padding: 20px;
+                text-align: center;
+                margin-top: 50px;
+                font-size: 26px;
+                color: black;
+                line-height: 1.2;
+                letter-spacing: 6px;
+                position: relative;
+                font-weight: 400;
+            }
+            p.skab {
+                text-align: center;
+                font-size: 14px;
+                width: 250px;
+                margin: 30px auto;
+                color: #a4a4a4;
+                line-height: 26px;
+                letter-spacing: 0;
+                position: relative;
+                font-weight: 300;
+            }
+            hr {
+                color: black;
+                margin-top: 30px;
+                background-color: black;
+                height: 1px;
+                width: 106px;
+                border: 0px;
+            }
+        }
+
+        /*PC*/
+
+        @media (min-width: 1024px) {}
+
+        h2.skab,
+        h4.skab {
+            padding: 20px;
+
+            margin-top: 50px;
+            font-size: 26px;
+            color: black;
+            line-height: 1.2;
+            letter-spacing: 6px;
+            position: relative;
+            font-weight: 400;
+        }
+
+        p.skab {
             width: 250px;
-            margin: 30px auto;
+            margin-left: 35px;
             color: #a4a4a4;
             line-height: 26px;
             letter-spacing: 0;
             position: relative;
             font-weight: 300;
-        }
-
-        hr{
             color: black;
             margin-top: 30px;
             background-color: black;
@@ -42,104 +115,41 @@
             border: 0px;
         }
 
+        hr {
+            color: black;
+            margin-top: 30px;
+            background-color: black;
+            height: 1px;
+            width: 106px;
+            border: 0px;
         }
-
-        /*IPAD*/
-        @media (min-width: 767px) and (max-width: 1023px){
-
-            h2.skab, h4.skab{
-                padding: 20px;
-          text-align: center;
-          margin-top: 50px;
-          font-size: 26px;
-          color: black;
-          line-height: 1.2;
-          letter-spacing: 6px;
-          position: relative;
-          font-weight: 400;
-            }
-            p.skab{
-                text-align: center;
-            font-size: 14px;
-            width: 250px;
-            margin: 30px auto;
-            color: #a4a4a4;
-            line-height: 26px;
-            letter-spacing: 0;
-            position: relative;
-            font-weight: 300;
-            }
-            hr{
-                 color: black;
-          margin-top: 30px;
-          background-color: black;
-          height: 1px;
-          width: 106px;
-          border: 0px;
-            }
-        }
-
-        /*PC*/
-        @media (min-width: 1024px){}
-        h2.skab, h4.skab{
-            padding: 20px;
-
-                margin-top: 50px;
-                font-size: 26px;
-                color: black;
-                line-height: 1.2;
-                letter-spacing: 6px;
-                position: relative;
-                font-weight: 400;
-        }
-            p.skab{
-                width: 250px;
-                margin-left: 35px;
-                color: #a4a4a4;
-                line-height: 26px;
-                letter-spacing: 0;
-                position: relative;
-                font-weight: 300;color: black;
-          margin-top: 30px;
-          background-color: black;
-          height: 1px;
-          width: 106px;
-          border: 0px;
-        }
-            hr{
- color: black; margin-top: 30px; background-color: black; height: 1px; width: 106px; border: 0px;
-        }
-
-
-
     </style>
 </head>
 
 <body>
- <?php include "header.html"; ?>
+    <?php include "header.html"; ?>
 
-  <section>
-   <img id="picture" src="party.jpg" alt="fest">
-   <h2 class="skab">Skab events</h2>
+    <section>
+       <a href="header.html"><img id="logo" src="favicon-32x32.png" alt="logo"></a>
+        <img id="picture" src="party.jpg" alt="fest">
+        <h2 class="skab">Skab events</h2>
 
-    <h4 class="skab">Skab dine egne events</h4>
-<p class="skab">Har du idéer til kulturelle events, klubber eller festivaler? I Huset har du mulighed for at lave dine egne kulturarrangementer.<br><br>
-
-    Hvert år præsenterer Huset omkring 1500 events arrangeret af og sammen med hundredevis af frivillige ildsjæle og kulturelle iværksættere. Huset er en platform for samskabelse, frivillighed og kulturel iværksætteri. Vi arbejder til dagligt med at udvikle sjove idéer til alternative og unikke oplevelser i samarbejdet med forskellige partnere. Vi går meget ind for co-creation og samskabelse, da det er vores erfaring, at der opstår noget helt specielt, når man inddrager flere parter til at skabe nye idéer og løsninger.</p>
-
+        <h4 class="skab">Skab dine egne events</h4>
+        <p class="skab">Har du idéer til kulturelle events, klubber eller festivaler? I Huset har du mulighed for at lave dine egne kulturarrangementer.<br><br> Hvert år præsenterer Huset omkring 1500 events arrangeret af og sammen med hundredevis af frivillige ildsjæle og kulturelle iværksættere. Huset er en platform for samskabelse, frivillighed og kulturel iværksætteri. Vi arbejder til dagligt med at udvikle sjove idéer til alternative og unikke oplevelser i samarbejdet med forskellige partnere. Vi går meget ind for co-creation og samskabelse, da det er vores erfaring, at der opstår noget helt specielt, når man inddrager flere parter til at skabe nye idéer og løsninger.</p>
 
 
-    <hr><h4 class="skab">Hvordan kan jeg lave kulturelle events i Huset?</h4>
-<p class="skab">Hvis du har et fedt projekt, et event eller en festival, men måske mangler en venue og en samarbejdspartner til at hjælpe med at løfte projektet, så kontakt endelig Huset. Som samarbejdspartner kan vi bl.a. tilbyde fysiske rammer, erfaring og viden, hjælp til planlægning og afvikling, kontakt til interessante partnere osv. Vi går meget ind for co-creation og samskabelse, da det er vores erfaring, at der opstår noget helt specielt, når man inddrager flere. Du skal derfor være interesseret i at indgå et partnerskab med Huset.<br><br>
 
-    Husets aktive brugere initierer også mange nye projekter, events og festivaler og søger altid nye samarbejdspartnere og muligheder. Så tag endelig fat i os, hvis du har lyst til at bidrage og samskabe.</p>
+        <hr>
+        <h4 class="skab">Hvordan kan jeg lave kulturelle events i Huset?</h4>
+        <p class="skab">Hvis du har et fedt projekt, et event eller en festival, men måske mangler en venue og en samarbejdspartner til at hjælpe med at løfte projektet, så kontakt endelig Huset. Som samarbejdspartner kan vi bl.a. tilbyde fysiske rammer, erfaring og viden, hjælp til planlægning og afvikling, kontakt til interessante partnere osv. Vi går meget ind for co-creation og samskabelse, da det er vores erfaring, at der opstår noget helt specielt, når man inddrager flere. Du skal derfor være interesseret i at indgå et partnerskab med Huset.<br><br> Husets aktive brugere initierer også mange nye projekter, events og festivaler og søger altid nye samarbejdspartnere og muligheder. Så tag endelig fat i os, hvis du har lyst til at bidrage og samskabe.</p>
 
-<p class="skab"><a href="mailto:christina@huset-kbh.dk">Kontakt Christina Lykkegaard her</a>
-<br><br>
-    <a href="mailto:alexander@huset-kbh.dk">Kontakt Alexander Nitze her</a></p>
+        <p class="skab"><a href="mailto:christina@huset-kbh.dk">Kontakt Christina Lykkegaard her</a>
+            <br><br>
+            <a href="mailto:alexander@huset-kbh.dk">Kontakt Alexander Nitze her</a></p>
 
-    <hr><h4 class="skab">Hvis jeg mangler et sted til at holde et privat event?</h4>
-    <p class="skab">Hvis du står og mangler et sted at afholde et privat event, skal du se mere om Husets udlejningslokaler her</p>
+        <hr>
+        <h4 class="skab">Hvis jeg mangler et sted til at holde et privat event?</h4>
+        <p class="skab">Hvis du står og mangler et sted at afholde et privat event, skal du se mere om Husets udlejningslokaler her</p>
 
 
     </section>
