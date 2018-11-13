@@ -1,90 +1,99 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Husets Biograf</title>
     <style>
-
         /*MOBIL*/
-        @media (min-width: 360px) and (max-width:766px){
-            h2.bio, h3.bio, h4.bio{
-            padding: 20px;
-          text-align: center;
-          margin-top: 50px;
-          font-size: 26px;
-          color: black;
-          line-height: 1.2;
-          letter-spacing: 6px;
-          position: relative;
-          font-weight: 400;
-        }
 
-        p.bio{
-            text-align: center;
-            font-size: 14px;
-            width: 250px;
-            margin: 30px auto;
-            color: #a4a4a4;
-            line-height: 26px;
-            letter-spacing: 0;
-            position: relative;
-            font-weight: 300;
-        }
+        @media (min-width: 360px) and (max-width:766px) {
+            h2.bio,
+            h3.bio,
+            h4.bio {
+                padding: 20px;
+                text-align: center;
+                margin-top: 50px;
+                font-size: 26px;
+                color: black;
+                line-height: 1.2;
+                letter-spacing: 6px;
+                position: relative;
+                font-weight: 400;
+            }
 
-        hr{
-            color: black;
-            margin-top: 30px;
-            background-color: black;
-            height: 1px;
-            width: 106px;
-            border: 0px;
-        }
+            p.bio {
+                text-align: center;
+                font-size: 14px;
+                width: 250px;
+                margin: 30px auto;
+                color: #a4a4a4;
+                line-height: 26px;
+                letter-spacing: 0;
+                position: relative;
+                font-weight: 300;
+            }
+
+            hr {
+                color: black;
+                margin-top: 30px;
+                background-color: black;
+                height: 1px;
+                width: 106px;
+                border: 0px;
+            }
         }
 
         /*IPAD*/
-            @media (min-width: 767px) and (max-width: 1023px){
-                h2.bio, h3.bio, h4.bio{
-                    padding: 20px;
-          text-align: center;
-          margin-top: 50px;
-          font-size: 26px;
-          color: black;
-          line-height: 1.2;
-          letter-spacing: 6px;
-          position: relative;
-          font-weight: 400;
-                }
 
-                p.bio{
-                     text-align: center;
-            font-size: 14px;
-            width: 250px;
-            margin: 30px auto;
-            color: #a4a4a4;
-            line-height: 26px;
-            letter-spacing: 0;
-            position: relative;
-            font-weight: 300;
-                }
+        @media (min-width: 767px) and (max-width: 1023px) {
+            h2.bio,
+            h3.bio,
+            h4.bio {
+                padding: 20px;
+                text-align: center;
+                margin-top: 50px;
+                font-size: 26px;
+                color: black;
+                line-height: 1.2;
+                letter-spacing: 6px;
+                position: relative;
+                font-weight: 400;
+            }
 
-                hr{
-                    color: black;
-          margin-top: 30px;
-          background-color: black;
-          height: 1px;
-          width: 106px;
-          border: 0px;
-                }
+            p.bio {
+                text-align: center;
+                font-size: 14px;
+                width: 250px;
+                margin: 30px auto;
+                color: #a4a4a4;
+                line-height: 26px;
+                letter-spacing: 0;
+                position: relative;
+                font-weight: 300;
+            }
+
+            hr {
+                color: black;
+                margin-top: 30px;
+                background-color: black;
+                height: 1px;
+                width: 106px;
+                border: 0px;
+            }
 
 
         }
 
         /*PC*/
-        @media (min-width: 1024px){
-         h2.bio, h3.bio, h4.bio{
-             padding: 20px;
+
+        @media (min-width: 1024px) {
+            h2.bio,
+            h3.bio,
+            h4.bio {
+                padding: 20px;
 
                 margin-top: 50px;
                 font-size: 26px;
@@ -93,9 +102,9 @@
                 letter-spacing: 6px;
                 position: relative;
                 font-weight: 400;
-        }
+            }
 
-            p.bio{
+            p.bio {
                 width: 250px;
                 margin-left: 35px;
                 color: #a4a4a4;
@@ -104,91 +113,60 @@
                 position: relative;
                 font-weight: 300;
             }
-            hr{
- color: black; margin-top: 30px; background-color: black; height: 1px; width: 106px; border: 0px;
+            hr {
+                color: black;
+                margin-top: 30px;
+                background-color: black;
+                height: 1px;
+                width: 106px;
+                border: 0px;
             }
-
 
     </style>
 </head>
 
 <body>
-<section>
+    <section>
 
-   <?php include "header.html"; ?>
-   <a href="header.html"><img id="logo" src="favicon-32x32.png" alt="logo"></a>
+        <?php include "header.html"; ?>
+        <a href="index.html"><img id="logo" src="favicon-32x32.png" alt="logo"></a>
 
-   <img id="picture" src="husets-biograf-2-1094x705.jpg" alt="biograf">
+        <img id="picture" src="husets-biograf-2-1094x705.jpg" alt="biograf">
 
-    <h2 class="bio">Husets Biograf</h2>
-    <p class="bio">Husets Biograf drives af Foreningen Husets Biograf (FHB). Det er et almennyttigt (non-profit) kulturinitiativ baseret udelukkende på frivillig arbejdskraft. Foreningen ser det som sin fornemmeste pligt at imødekomme lokale græsrodsbevægelser, fremmede kulturer og velgørenhedsorganisationer. Yderligere danner biografen rammen om Københavns hæderkronede børnefilmklub. I Husets Biograf bliver der både vist kultklassikere, samt en hel række ukendte film. Unge filmkunstnere får ligeledes mulighed for at vise deres værker frem i Husets Biograf.</p>
-<hr>
-    <h4 class="bio">Kom og besøg os i Husets Biograf og få dyrket din indre filmnørd</h4>
-<p class="bio">I Husets Biograf gør vi en dyd ud af, at skabe unikke og sjove filmoplevelser. I den gamle biograf viser vi alt fra kultklassikere til de ”små” ukendte film indenfor bl.a. genrerne science fiktion, drama, fantasy og horror.<br><br>
-
-I biografen bliver der også afholdt de populære interaktive filmvisninger som Sing-Along, hvor man kan få lov til, at danse og skråle med til Grease. Hvis du ikke er til fællessang og dans har du også mulighed for en aften i selskab med The Dudes og fællesskål i kolde White Russians til arrangementet Movie Drink-Along, hvor kultklassikeren The Big Labowski bliver vist.<br><br>
+        <h2 class="bio">Husets Biograf</h2>
+        <p class="bio">Husets Biograf drives af Foreningen Husets Biograf (FHB). Det er et almennyttigt (non-profit) kulturinitiativ baseret udelukkende på frivillig arbejdskraft. Foreningen ser det som sin fornemmeste pligt at imødekomme lokale græsrodsbevægelser, fremmede kulturer og velgørenhedsorganisationer. Yderligere danner biografen rammen om Københavns hæderkronede børnefilmklub. I Husets Biograf bliver der både vist kultklassikere, samt en hel række ukendte film. Unge filmkunstnere får ligeledes mulighed for at vise deres værker frem i Husets Biograf.</p>
+        <hr>
+        <h4 class="bio">Kom og besøg os i Husets Biograf og få dyrket din indre filmnørd</h4>
+        <p class="bio">I Husets Biograf gør vi en dyd ud af, at skabe unikke og sjove filmoplevelser. I den gamle biograf viser vi alt fra kultklassikere til de ”små” ukendte film indenfor bl.a. genrerne science fiktion, drama, fantasy og horror.<br><br> I biografen bliver der også afholdt de populære interaktive filmvisninger som Sing-Along, hvor man kan få lov til, at danse og skråle med til Grease. Hvis du ikke er til fællessang og dans har du også mulighed for en aften i selskab med The Dudes og fællesskål i kolde White Russians til arrangementet Movie Drink-Along, hvor kultklassikeren The Big Labowski bliver vist.<br><br> Der er selvfølgelig også rig mulighed for, at nyde den helt klassiske biograftur med sodavand, popcorn og hvor du har mulighed for at se film som fx; fantasi filmen The NeverEnding Story, The Room, som har fået sin kult status for, at være verdens dårligste film, gyseren Carrie, klassikere som ADELHEID samt mange mange flere.<br><br></p>
 
 
-Der er selvfølgelig også rig mulighed for, at nyde den helt klassiske biograftur med sodavand, popcorn og hvor du har mulighed for at se film som fx; fantasi filmen The NeverEnding Story, The Room, som har fået sin kult status for, at være verdens dårligste film, gyseren Carrie, klassikere som ADELHEID samt mange mange flere.<br><br></p>
+        <p class="bio"><a href="https://huset-kbh.dk/">Find oversigten</a> over filmvisninger på hjemmesiden under Events.</p>
 
-
-    <p class="bio"><a href="https://huset-kbh.dk/">Find oversigten</a> over filmvisninger på hjemmesiden under Events.</p>
-
-<p class="bio">Her kan du også finde oplysninger om, hvordan du kan købe og reservere billetter.<br><br>
-
-Så kom og lad dig dykke ned i en verden af fantastiske historie fortalt på film.</p><br>
-<hr>
-    <h4 class="bio">Praktisk information</h4>
-<p class="bio"> Kan anvendes til: film screenings, receptioner, filmklubber etc.<br>
-Max kapacitet: 63 personer<br>
-Faciliteter i biografen: Stole/lærred/fremviser<br>
-Faciliteter i biografens foyer: Bar/dankortmaskine/borde/stole<br>
-Mulighed for catering: Nej.<br>
-    Rengøring:  Inkl. i lejeprisen.<br><br><br></p>
+        <p class="bio">Her kan du også finde oplysninger om, hvordan du kan købe og reservere billetter.<br><br> Så kom og lad dig dykke ned i en verden af fantastiske historie fortalt på film.</p><br>
+        <hr>
+        <h4 class="bio">Praktisk information</h4>
+        <p class="bio"> Kan anvendes til: film screenings, receptioner, filmklubber etc.<br> Max kapacitet: 63 personer<br> Faciliteter i biografen: Stole/lærred/fremviser<br> Faciliteter i biografens foyer: Bar/dankortmaskine/borde/stole<br> Mulighed for catering: Nej.<br> Rengøring: Inkl. i lejeprisen.<br><br><br></p>
 
 
 
-    <hr><h4 class="bio">Kontakt</h4>
-<p class="bio">Jack Stevenson<br>
+        <hr>
+        <h4 class="bio">Kontakt</h4>
+        <p class="bio">Jack Stevenson<br> Mail: <a href="mailto:jack.stevenson@mail.dk">jack.stevenson@mail.dk</a><br> Tlf: <a href="tel:+45 20297013">+45 20 29 70 13</a>
+            <br><br><br></p>
 
-Mail: <a href="mailto:jack.stevenson@mail.dk">jack.stevenson@mail.dk</a><br>
-
-Tlf: <a href="tel:+45 20297013">+45 20 29 70 13</a>
-    <br><br><br></p>
-
-    <hr><h4 class="bio">Priser og betingelser for leje</h4>
-<p class="bio">Download samlet liste over priser og betingelser her.<br><br>
-
-
-*Bemærk at priser er eksklusiv moms, og lejen udelukkende går til dækning af udgifter i forbindelse med vedligeholdelse af biografens udstyr.<br><br><br></p><hr>
+        <hr>
+        <h4 class="bio">Priser og betingelser for leje</h4>
+        <p class="bio">Download samlet liste over priser og betingelser her.<br><br> *Bemærk at priser er eksklusiv moms, og lejen udelukkende går til dækning af udgifter i forbindelse med vedligeholdelse af biografens udstyr.<br><br><br></p>
+        <hr>
 
 
 
-<h3 class="bio">Yderligere information </h3>
-<p class="bio">Biografen er bemandet en time før arrangementets start i de kategorier, der er beregnet til offentlige forevisninger/forevisninger med et større publikum (4 og 6 timer). Således er filmen gjort klar, caféen er åben og publikum har mulighed for at ankomme i god ro og orden. Efter forestillingen har publikum mulighed for at hygge sig en stund, hvorefter personalet sørger for rengøring samt nedlukning af tekniske faciliteter.<br><br>
-
-Hvad angår 1 og 2 timers kategorierne, er der ikke tid til publikumsmodtagelse og rengøring mv. Derfor er disse kategorier primært forbeholdt særlige arrangementer for en mindre, sluttet kreds.<br><br>
-
-Lejer har ret til at sælge billetter til offentligheden i forbindelse med 4 og 6 timers kategorierne. Dog skal en tredjedel af billetindtægten tilfalde FHB. Lejer påtager sig ethvert ansvar for fremskaffelse af filmisk materiale samt rettigheder hertil.<br><br>
-
-
-30 minutters brug eller derunder:<br>
-Der er IKKE mulighed for at have et publikum tilstede i denne kategori! Kategorien er beregnet til test eller gennemsyn af ganske korte produkter.<br><br>
-
-1 times brug eller derunder:<br>
-Denne kategori er beregnet til situationer, hvor der ikke skal vises film, men hvor biografen skal danne baggrund for en anden, kortvarig aktivitet, der ikke kræver forudgående og efterfølgende forberedelse. Her er der ikke mulighed for at invitere et publikum. I særlige tilfælde kan denne kategori bruges til visning af en kort film for en eller to personer – fx i studieøjemed.<br><br>
-
-2 timers brug eller derunder:<br>
-Denne kategori er beregnet til møder og lign., hvor der skal vises en kort film. Bemærk, at det ikke er muligt at benytte denne kategori, hvis man vil vise film af spillefilmslængde.<br><br>
-
-4 timers brug eller derunder:<br>
-Denne kategori egner sig til visning af film af cirka 90 minutters varighed(eller derunder). Her er der mulighed for at arrangere offentlige forevisninger med tid til modtagelse af publikum og efterfølgende afrunding.<br><br>
-
-6 timers brug eller derunder:<br>
-Denne kategori egner til større arrangementer, hvor der skal være tid til caféhygge, debat, workshop med videre. Der er frit valg, om arrangementet skal holdes i dag- eller aftentimerne.</p>
+        <h3 class="bio">Yderligere information </h3>
+        <p class="bio">Biografen er bemandet en time før arrangementets start i de kategorier, der er beregnet til offentlige forevisninger/forevisninger med et større publikum (4 og 6 timer). Således er filmen gjort klar, caféen er åben og publikum har mulighed for at ankomme i god ro og orden. Efter forestillingen har publikum mulighed for at hygge sig en stund, hvorefter personalet sørger for rengøring samt nedlukning af tekniske faciliteter.<br><br> Hvad angår 1 og 2 timers kategorierne, er der ikke tid til publikumsmodtagelse og rengøring mv. Derfor er disse kategorier primært forbeholdt særlige arrangementer for en mindre, sluttet kreds.<br><br> Lejer har ret til at sælge billetter til offentligheden i forbindelse med 4 og 6 timers kategorierne. Dog skal en tredjedel af billetindtægten tilfalde FHB. Lejer påtager sig ethvert ansvar for fremskaffelse af filmisk materiale samt rettigheder hertil.<br><br> 30 minutters brug eller derunder:<br> Der er IKKE mulighed for at have et publikum tilstede i denne kategori! Kategorien er beregnet til test eller gennemsyn af ganske korte produkter.<br><br> 1 times brug eller derunder:<br> Denne kategori er beregnet til situationer, hvor der ikke skal vises film, men hvor biografen skal danne baggrund for en anden, kortvarig aktivitet, der ikke kræver forudgående og efterfølgende forberedelse. Her er der ikke mulighed for at invitere et publikum. I særlige tilfælde kan denne kategori bruges til visning af en kort film for en eller to personer – fx i studieøjemed.<br><br> 2 timers brug eller derunder:<br> Denne kategori er beregnet til møder og lign., hvor der skal vises en kort film. Bemærk, at det ikke er muligt at benytte denne kategori, hvis man vil vise film af spillefilmslængde.<br><br> 4 timers brug eller derunder:<br> Denne kategori egner sig til visning af film af cirka 90 minutters varighed(eller derunder). Her er der mulighed for at arrangere offentlige forevisninger med tid til modtagelse af publikum og efterfølgende afrunding.<br><br> 6 timers brug eller derunder:<br> Denne kategori egner til større arrangementer, hvor der skal være tid til caféhygge, debat, workshop med videre. Der er frit valg, om arrangementet skal holdes i dag- eller aftentimerne.</p>
 
     </section>
 
     <?php include "footer.html"; ?>
 </body>
+
 </html>
