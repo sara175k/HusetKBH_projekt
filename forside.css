@@ -20,14 +20,14 @@ body {
 }
 
 main {
-    font-family: verdana, sans;
+    font-family: 'Lato';
 }
 
 h1,
 h3,
 h2,
 h4 {
-    font-family: verdana;
+    font-family: 'Lato';
 }
 
 h1,
@@ -58,6 +58,11 @@ p,
 
 
 /*EVENTBOKSE/FLEX START*/
+
+.filter {
+    text-align: center;
+}
+
 
 main {
     margin: auto;
