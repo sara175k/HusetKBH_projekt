@@ -163,18 +163,7 @@ table {
         padding-left: 100px;
     }
 
-    #admin_picture {
-        width: 40%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        float: left;
-        margin-right: 2em;
-    }
 
-    #admin h2 {
-        float: inherit;
-    }
 }
 
 /*PC NAV*/
