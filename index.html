@@ -9,11 +9,7 @@
     <title>Huset KBH</title>
 </head>
 
-
-
-
 <body>
-
 
     <section id="splash">
         <!-- indsæt koden til et responsive image her.
@@ -34,10 +30,8 @@
     <div class="splash">
     </div>
 
-
-
     <div class="filter">
-        <!--    sæt filter her-->
+        <h1>Events</h1>
         <button class="menu-item" data-type="type">Alt</button>
         <button class="menu-item" data-type="musikevents">Musik</button>
         <button class="menu-item" data-type="filmevents">Film</button>
@@ -45,8 +39,6 @@
         <button class="menu-item" data-type="scenekunst">Scenekunst</button>
         <button class="menu-item" data-type="andet">Andet</button>
     </div>
-
-
 
     <main>
         <section class="container-data">
@@ -79,7 +71,7 @@
     </main>
 
 
-    <script>
+    <!--<script>
         document.addEventListener("DOMContentLoaded", getJSON);
         let posts;
         let postTemplate = document.querySelector("[data-template]");
@@ -104,6 +96,68 @@
                 postContainer.appendChild(klon);
             })
         }
+    </script>-->
+
+
+    <script>
+        let dest = document.querySelector("[data-container]");
+        let posts = [];
+        let kategorifilter = "type";
+
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+        async function hentJson() {
+            let jsonData = await fetch("http://sarahjane.dk/kea/2.semester/huset/wordpress/wp-json/wp/v2/multiple-post-type?&type[]=musikevents&type[]=filmevents&type[]=ord&type[]=scenekunst&type[]=andet");
+            posts = await jsonData.json();
+            visPosts();
+        }
+
+        document.querySelectorAll(".menu-item").forEach(knap => {
+            knap.addEventListener("click", filtrering)
+        });
+
+        function filtrering() {
+            dest.textContent = "";
+            kategorifilter = this.getAttribute("data-type");
+            visPosts()
+        }
+
+        function visPosts() {
+            console.log(posts);
+            let dest = document.querySelector("[data-container]"),
+
+                temp = document.querySelector("[data-template]");
+
+            let postContainer = document.querySelector("[data-container]");
+            /*
+               document.querySelector("header h2").textContent = kategorifilter;*/
+            posts.forEach(post => {
+
+                console.log(post.id);
+                if (post.type == kategorifilter || kategorifilter == "type") {
+                    let klon = temp.cloneNode(true).content;
+                    klon.querySelector("[data-title]").textContent = post.title.rendered
+                    klon.querySelector("[data-dato]").innerHTML = post.acf.dato
+
+                    klon.querySelector("[data-tid]").innerHTML = post.acf.tid
+
+
+                    klon.querySelector("[data-text]").innerHTML = post.content.rendered
+
+
+                    klon.querySelector("[data-sted]").innerHTML = post.acf.sted
+
+
+                    klon.querySelector("[data-event]").innerHTML = post.acf.event
+
+
+                    klon.querySelector("[data-billede]").src = post.acf.billede.url
+                    postContainer.appendChild(klon);
+                }
+            })
+        }
     </script>
+
+
 </body>
 </html>

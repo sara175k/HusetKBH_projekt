@@ -49,6 +49,7 @@ p,
     padding-bottom: 20px
 }
 
+
 /*GENERELT SLUT*/
 
 
@@ -59,10 +60,34 @@ p,
 
 /*EVENTBOKSE/FLEX START*/
 
+
 .filter {
     text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+
 }
 
+.menu-item {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Lato', verdana;
+    font-weight: bold;
+    border: none;
+    padding: 15px 32px;
+    margin: 4px 2px;
+    border-radius: 20px;
+    background-color: white;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    color: white;
+    background-color: rgba(76, 76, 76, 0.8)
+}
 
 main {
     margin: auto;
