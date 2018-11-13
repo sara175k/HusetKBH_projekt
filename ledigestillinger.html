@@ -6,90 +6,165 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Ledige stillinger</title>
     <style>
-        h1.stillinger, h4.stillinger{
-            padding: 20px;
-          text-align: center;
-          margin-top: 50px;
-          font-size: 26px;
-          color: black;
-          line-height: 1.2;
-          letter-spacing: 6px;
-          position: relative;
-          font-weight: 400;
-        }
-        h5.stillinger{
-            font-weight: 400;
-            position: relative;
-            letter-spacing: 6px;
-            line-height: 1.2;
-            color: black;
-            font-size: 12px;
-            margin-top: 50px;
-            text-align: center;
-            padding: 20px;
+        /*MOBIL*/
 
+        @media (min-width: 360px) and (max-width:766px) {
+            h1.stillinger,
+            h4.stillinger {
+                padding: 20px;
+                text-align: center;
+                margin-top: 50px;
+                font-size: 26px;
+                color: black;
+                line-height: 1.2;
+                letter-spacing: 6px;
+                position: relative;
+                font-weight: 400;
+            }
+            h5.stillinger {
+                font-weight: 400;
+                position: relative;
+                letter-spacing: 6px;
+                line-height: 1.2;
+                color: black;
+                font-size: 12px;
+                margin-top: 50px;
+                text-align: center;
+                padding: 20px;
+
+            }
+
+            ul.stillinger,
+            p.stillinger {
+                text-align: center;
+                font-size: 14px;
+                width: 250px;
+                margin: 30px auto;
+                color: #a4a4a4;
+                line-height: 26px;
+                letter-spacing: 0;
+                position: relative;
+                font-weight: 300;
+            }
         }
 
-        ul.stillinger, p.stillinger{
-            text-align: center;
-            font-size: 14px;
-            width: 250px;
-            margin: 30px auto;
-            color: #a4a4a4;
-            line-height: 26px;
-            letter-spacing: 0;
-            position: relative;
-            font-weight: 300;
+        /*IPAD*/
+
+        @media (min-width: 767px) and (max-width: 1023px) {
+            h1.stillinger,
+            h4.stillinger {
+
+                padding: 20px;
+                text-align: center;
+                margin-top: 50px;
+                font-size: 26px;
+                color: black;
+                line-height: 1.2;
+                letter-spacing: 6px;
+                position: relative;
+                font-weight: 400;
+            }
+
+            h5.stillinger {
+                padding: 20px;
+                text-align: center;
+                margin-top: 50px;
+                font-size: 26px;
+                color: black;
+                line-height: 1.2;
+                letter-spacing: 6px;
+                position: relative;
+                font-weight: 400;
+
+            }
+            ul.stillinger,
+            p.stillinger {
+                text-align: center;
+                font-size: 14px;
+                width: 250px;
+                margin: 30px auto;
+                color: #a4a4a4;
+                line-height: 26px;
+                letter-spacing: 0;
+                position: relative;
+                font-weight: 300;
+            }
         }
 
+        /*PC*/
+
+        @media (min-width: 1024px) {
+            h1.stillinger,
+            h4.stillinger {
+                padding: 20px;
+                margin-top: 50px;
+                font-size: 26px;
+                color: black;
+                line-height: 1.2;
+                letter-spacing: 6px;
+                position: relative;
+                font-weight: 400;
+            }
+
+            h5.stillinger {
+                padding: 20px;
+                margin-top: 50px;
+                font-size: 26px;
+                color: black;
+                line-height: 1.2;
+                letter-spacing: 6px;
+                position: relative;
+                font-weight: 400;
+            }
+
+            ul.stillinger,
+            p.stillinger {
+                width: 250px;
+                margin-left: 35px;
+                color: #a4a4a4;
+                line-height: 26px;
+                letter-spacing: 0;
+                position: relative;
+                font-weight: 300;
+            }
+        }
     </style>
 </head>
 
 <body>
- <?php include "header.html"; ?>
+    <?php include "header.html"; ?>
 
-  <article>
-   <h1 class="stillinger">Praktik og ledige stillinger</h1><br>
+    <article>
+        <h1 class="stillinger">Praktik og ledige stillinger</h1><br>
 
-   <h4 class="stillinger">Vi søger lige nu:</h4>
-
-
-
-    <ul class="stillinger"><a href="https://www.ofir.dk/resultat/projektkoordinator-med-fokus-paa-udvikling-og-et-hjerte-for-kultur-til-huset-kbh-barselsvikariat-3298.aspx?jobId=329890418">Projektkoordinator</a> med fokus på udvikling og et hjerte for kultur til Huset-KBH (barselsvikariat) </ul>
+        <h4 class="stillinger">Vi søger lige nu:</h4>
 
 
 
-    <h4 class="stillinger">Praktik</h4>
-
-    <p class="stillinger">Vi søger løbende studiepraktikanter til Husets PR-team:</p>
-
-      <p class="stillinger"><a href="https://huset-kbh.dk/filer/HusetKBH_Praktikopslag_grafiker.pdf">Grafisk praktikant</a></p>
-
-    <p class="stillinger">(Deadline for ansøgning er udskudt til den 15. nov. 2018 – tiltrædelse jan/feb 2019)</p>
-
-
-    <p class="stillinger"><a href="https://huset-kbh.dk/filer/HusetKBH_praktikopslag_kommunikation.pdf">Kommunikationspraktikant </a> <br>
-
-    Til Huset - KBH (Ansøgning senest 16. nov. 2018 – tiltrædelse jan/feb 2019)</p>
-
-    <p class="stillinger"><a href="https://huset-kbh.dk/filer/HusetKBH_praktik_musikcafeen.pdf">Kommunikationspraktikant</a> <br>
-    Til Musikcaféen(Ansøgning senest 4. nov. 2018 – tiltrædelse jan/feb 2019)</p>
-
-    <p class="stillinger"><a href="https://huset-kbh.dk/filer/HusetKBH_praktikopslag_Huset50.pdf">Praktikant til “Huset 50 år i 2020”  </a> <br>
-    Research, kommunikation og projektarbejde (Ansøgning senest 4. nov. 2018 – tiltrædelse jan/feb 2019)</p>
+        <ul class="stillinger"><a href="https://www.ofir.dk/resultat/projektkoordinator-med-fokus-paa-udvikling-og-et-hjerte-for-kultur-til-huset-kbh-barselsvikariat-3298.aspx?jobId=329890418">Projektkoordinator</a> med fokus på udvikling og et hjerte for kultur til Huset-KBH (barselsvikariat) </ul>
 
 
 
-<p class="stillinger">Vores politik og værdier ift. praktik i Huset-KBH
-Som praktikant i Huset bidrager du ved at assistere Husets ansatte i deres arbejde for at skabe gode rammer for kunstneriske oplevelse gennem samskabelse, frivillighed og kulturelt iværksætteri.<br><br>
+        <h4 class="stillinger">Praktik</h4>
 
-Vi har taget et aktivt valg om at bidrage til uddannelsesområdet ved at modtage studiepraktikanter. Vi vil gerne bidrage med at give de studerende en mulighed for at afprøve deres nyerhvervede kompetencer i et praksisnært miljø med vejledning fra en fagligt relevant vejleder. På den måde holder vi os også orienterede om nyeste trends indenfor fx kommunikations- og kulturproduktionsområdet.<br><br>
+        <p class="stillinger">Vi søger løbende studiepraktikanter til Husets PR-team:</p>
 
-Det er vigtigt for os, at opgaverne er fagligt udfordrende, og vi følger op med løbende evalueringsmøder mellem praktikant og vejleder og har ofte studievejledere på besøg for at sikre det faglige arbejde. Vi tilpasser opgaver og arbejdstid med eventuelle studieaftaler såsom vejledermøder, kurser og opgaveskrivning og står desuden til rådighed for interview eller andet materiale til brug i eventuelle afsluttende studieopgaver.<br><br>
+        <p class="stillinger"><a href="https://huset-kbh.dk/filer/HusetKBH_Praktikopslag_grafiker.pdf">Grafisk praktikant</a></p>
 
-    Vores værdier for arbejdet med praktikanter handler om udvikling, tilstedeværelse og social ansvarlighed.<br><br></p>
+        <p class="stillinger">(Deadline for ansøgning er udskudt til den 15. nov. 2018 – tiltrædelse jan/feb 2019)</p>
 
-    <h5 class="stillinger">Praktikkontakt:  Christina Lykkegaard på <a href="mailto:christina@huset-kbh.dk">christina@huset-kbh.dk</a></h5>
+
+        <p class="stillinger"><a href="https://huset-kbh.dk/filer/HusetKBH_praktikopslag_kommunikation.pdf">Kommunikationspraktikant </a> <br> Til Huset - KBH (Ansøgning senest 16. nov. 2018 – tiltrædelse jan/feb 2019)</p>
+
+        <p class="stillinger"><a href="https://huset-kbh.dk/filer/HusetKBH_praktik_musikcafeen.pdf">Kommunikationspraktikant</a> <br> Til Musikcaféen(Ansøgning senest 4. nov. 2018 – tiltrædelse jan/feb 2019)</p>
+
+        <p class="stillinger"><a href="https://huset-kbh.dk/filer/HusetKBH_praktikopslag_Huset50.pdf">Praktikant til “Huset 50 år i 2020”  </a> <br> Research, kommunikation og projektarbejde (Ansøgning senest 4. nov. 2018 – tiltrædelse jan/feb 2019)</p>
+
+
+
+        <p class="stillinger">Vores politik og værdier ift. praktik i Huset-KBH Som praktikant i Huset bidrager du ved at assistere Husets ansatte i deres arbejde for at skabe gode rammer for kunstneriske oplevelse gennem samskabelse, frivillighed og kulturelt iværksætteri.<br><br> Vi har taget et aktivt valg om at bidrage til uddannelsesområdet ved at modtage studiepraktikanter. Vi vil gerne bidrage med at give de studerende en mulighed for at afprøve deres nyerhvervede kompetencer i et praksisnært miljø med vejledning fra en fagligt relevant vejleder. På den måde holder vi os også orienterede om nyeste trends indenfor fx kommunikations- og kulturproduktionsområdet.<br><br> Det er vigtigt for os, at opgaverne er fagligt udfordrende, og vi følger op med løbende evalueringsmøder mellem praktikant og vejleder og har ofte studievejledere på besøg for at sikre det faglige arbejde. Vi tilpasser opgaver og arbejdstid med eventuelle studieaftaler såsom vejledermøder, kurser og opgaveskrivning og står desuden til rådighed for interview eller andet materiale til brug i eventuelle afsluttende studieopgaver.<br><br> Vores værdier for arbejdet med praktikanter handler om udvikling, tilstedeværelse og social ansvarlighed.<br><br></p>
+
+        <h5 class="stillinger">Praktikkontakt: Christina Lykkegaard på <a href="mailto:christina@huset-kbh.dk">christina@huset-kbh.dk</a></h5>
     </article>
 
     <?php include "footer.html"; ?>
