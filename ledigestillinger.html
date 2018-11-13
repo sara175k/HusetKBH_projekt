@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" href="Icon-16.png" type="image" sizes="16x16">
+        <link rel="apple-touch-icon" sizes="180x180" href="Icon-180.png">
     <title>Ledige stillinger</title>
     <style>
         /*MOBIL*/
@@ -95,8 +97,9 @@
 
         @media (min-width: 1024px) {
             h1.stillinger,
-            h4.stillinger {
+            h4.stillinger, h5.stillinger {
                 padding: 20px;
+                text-align: center;
                 margin-top: 50px;
                 font-size: 26px;
                 color: black;
@@ -106,21 +109,13 @@
                 font-weight: 400;
             }
 
-            h5.stillinger {
-                padding: 20px;
-                margin-top: 50px;
-                font-size: 26px;
-                color: black;
-                line-height: 1.2;
-                letter-spacing: 6px;
-                position: relative;
-                font-weight: 400;
-            }
 
             ul.stillinger,
             p.stillinger {
-                width: 250px;
-                margin-left: 35px;
+                text-align: left;
+                font-size: 14px;
+                width: 500px;
+                margin: 30px auto;
                 color: #a4a4a4;
                 line-height: 26px;
                 letter-spacing: 0;
@@ -135,7 +130,7 @@
     <?php include "header.html"; ?>
 
     <article>
-       <a href="index.html"><img id="logo" src="favicon-32x32.png" alt="logo"></a>
+       <a href="index.php"><img id="logo" src="huset.png" alt="logo"></a>
         <h1 class="stillinger">Praktik og ledige stillinger</h1><br>
 
         <h4 class="stillinger">Vi søger lige nu:</h4>
