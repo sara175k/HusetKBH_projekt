@@ -5,7 +5,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-img#logo, #frivillige {
+img.logo, #frivillige {
     display: block;
     margin: auto;
 }
@@ -14,6 +14,7 @@ img {
     max-width: 100%;
     max-height: 100%;
     margin: auto;
+    display: block;
 }
 
 iframe {
@@ -41,17 +42,6 @@ table {
 
 
 /*admin*/
-
-/*
-#admin {
-    position: relative;
-    width: 1000px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-
-*/
 
 #admin h2 {
     text-align: center;
@@ -82,52 +72,6 @@ table {
     width: 100%;
     border: 2px solid black;
 }
-
-
-
-/*
-#admin .1 {
-    margin-top: 40px;
-    width: 300px;
-    float: left;
-    margin-bottom: 70px;
-    height: 350px;
-}
-
-#admin .4,
-.7,
-.10,
-.13,
-.16 {
-    margin-top: 40px;
-    width: 300px;
-    float: left;
-    margin-bottom: 70px;
-    height: 350px;
-}
-
-#admin .2,
-.5,
-.8,
-.11,
-.14 {
-    margin-top: 40px;
-    width: 300px;
-    float: left;
-    margin-bottom: 70px;
-    height: 350px;
-}
-
-
-#admin .3 .6 .9 .12,
-.15 {
-    margin-top: 40px;
-    width: 300px;
-    float: left;
-    margin-bottom: 70px;
-    height: 350px;
-}
-*/
 
 /*DONE*/
 
