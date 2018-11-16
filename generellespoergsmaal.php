@@ -11,7 +11,7 @@
 
 <body>
 
-    <?php include "index.html";?>
+    <?php include "generellespoergsmaal.html";?>
 
     <main>
 

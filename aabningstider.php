@@ -10,8 +10,7 @@
 </head>
 
 <body>
-
-    <?php include "index.html";?>
+    <?php include "aabningstider.html";?>
 
     <main>
 
