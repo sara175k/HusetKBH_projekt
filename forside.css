@@ -97,9 +97,9 @@ main {
 article {
     display: flex;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: rgba(76, 76, 76, 0.8);
     border-radius: 1em;
-    margin-top: 1em;
+    margin-top: 3em;
 }
 
 article,
@@ -132,9 +132,9 @@ img {
     article {
         display: flex;
         flex-wrap: nowrap;
-        background-color: white;
+        background-color: rgba(76, 76, 76, 0.8);
         border-radius: 1em;
-        margin-top: 1em;
+        margin-top: 8em;
     }
 
     .box {
