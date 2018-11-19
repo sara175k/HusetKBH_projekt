@@ -4,17 +4,105 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="icon" href="Icon-16.png" type="image" sizes="16x16">
-        <link rel="apple-touch-icon" sizes="180x180" href="Icon-180.png">
+    <link rel="icon" href="Icon-16.png" type="image" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="Icon-180.png">
 
-            <!--    google fonts-->
+    <!--    google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
     <title>Husets Administration</title>
 
     <style>
-            body {
-                margin: 1.5em;
+        body {
+            margin: 1.5em;
+        }
+
+        /*MOBIL*/
+
+        @media (min-width: 360px) and (max-width:767px) {
+            #admin_picture {
+                width: 50%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border: 2px solid black;
+
+            }
+
+             p.admin {
+            text-align: left;
+                font-size: 14px;
+                width: 500px;
+                margin: 30px auto;
+                color: #a4a4a4;
+                line-height: 26px;
+                letter-spacing: 0;
+                position: relative;
+                font-weight: 300;
+        }
+
+            p.admini{
+                text-align: left;
+                font-size: 14px;
+                width: 250px;
+                margin: 30px auto;
+                color: #a4a4a4;
+                line-height: 26px;
+                letter-spacing: 0;
+                position: relative;
+                font-weight: 300;
+            }
+
+             h2.admin {
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 26px;
+            color: black;
+            line-height: 1.2;
+            letter-spacing: 6px;
+            position: relative;
+            font-weight: 400px;
+            font-family: 'Lato' sans-serif;
+            font-weight: normal;
+        }
+
+
+        }
+
+        /*TABLET NAV*/
+
+        @media (min-width: 767px) and (max-width: 1023px) {
+            #admin_picture {
+                width: 50%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border: 2px solid black;
+            }
+
+             p.admin {
+            text-align: left;
+            font-size: 14px;
+            width: 500px;
+            margin: 30px auto;
+            color: #a4a4a4;
+            line-height: 26px;
+            letter-spacing: 0;
+            position: relative;
+            font-weight: 300;
+            }
+
+            p.admini{
+                text-align: left;
+                font-size: 14px;
+                width: 350px;
+                margin: 30px auto;
+                color: #a4a4a4;
+                line-height: 26px;
+                letter-spacing: 0;
+                position: relative;
+                font-weight: 300;
             }
 
             h2.admin {
@@ -30,92 +118,29 @@
                 font-family: 'Lato' sans-serif;
                 font-weight: normal;
             }
-
-            p.admini {
-                font-size: 14px;
-                line-height: 26px;
-                letter-spacing: 0;
-                position: relative;
-                font-weight: 300;
-                 color: #a4a4a4;
-            }
-
-            p.admin {
-                text-align: center;
-                font-size: 14px;
-                color: #a4a4a4;
-                line-height: 26px;
-                letter-spacing: 0;
-                position: relative;
-                font-weight: 300;
-
-        }
-
-
-            #admin_picture {
-                width: 100%;
-                border: 2px solid black;
-            }
-
-        /*TABLET NAV*/
-
-        @media (min-width: 767px) and (max-width: 1023px){
-            #admin_picture {
-                width: 50%;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .adminis {
-               display: block;
-            margin-left: auto;
-                margin-right: auto;
-                width: 35%;
-
-            }
-
-            h2.admin{
-                    padding: 20px;
-                text-align: center;
-                margin-top: 50px;
-                font-size: 26px;
-                color: black;
-                line-height: 1.2;
-                letter-spacing: 6px;
-                position: relative;
-                font-weight: 400px;
-                font-family: 'Lato' sans-serif;
-                font-weight: normal;
-                }
         }
 
         /*PC NAV*/
-            @media (min-width: 1024px) {
-                #admin_picture {
-                    width: 40%;
-                }
 
-                .txt {
-                    float: right;
-                }
+        @media (min-width: 1023px) {
+            #admin_picture {
+                width: 50%;
+                border: 2px solid black;
 
-                .column {
-                    width: 40%;
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-bottom: 6em;
-                }
+            }
 
-                .adminis {
-                    width: 35%;
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
 
-                h2.admin{
+            .column {
+                width: 40%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 6em;
+            }
+
+
+
+            h2.admin {
                 padding: 20px;
                 text-align: center;
                 margin-top: 50px;
@@ -126,25 +151,51 @@
                 position: relative;
                 font-weight: 400px;
                 font-family: 'Lato' sans-serif;
-                    font-weight: normal;
-                }
+                font-weight: normal;
+
             }
 
+            p.admin {
+                text-align: left;
+                font-size: 14px;
+                width: 500px;
+                margin: 30px auto;
+                color: #a4a4a4;
+                line-height: 26px;
+                letter-spacing: 0;
+                position: relative;
+                font-weight: 300;
 
+            }
+
+            p.admini{
+                text-align: left;
+                font-size: 14px;
+                width: 350px;
+                margin: 30px auto;
+                color: #a4a4a4;
+                line-height: 26px;
+                letter-spacing: 0;
+                position: relative;
+                font-weight: 300;
+
+            }
+        }
     </style>
 
 </head>
 
 <body>
+
+    <a href="index.php"><img src="huset.png" alt="logo" class="logo"></a>
+
     <?php include "header.html"; ?>
 
 
 
 
     <h2 class="admin">Husets administration</h2>
-    <div class="adminis">
     <p class="admini">Hvis du har brug for at komme direkte i kontakt med Husets medarbejdere, kan du finde kontaktoplysninger herunder.</p>
-    </div>
 
 
 
@@ -153,168 +204,134 @@
         <div class="column">
             <h2 class="admin">Pr/Kommunikation</h2>
             <img id="admin_picture" src="christina_web.jpg" alt="Chrstina">
-            <div class="txt">
-                <p class="admin"> Christina Ben-Yedidia Lykkegaard <br>
-                    Head of Public Relations<br>
-                    Mail: <a href="mailto:christina@huset-kbh.dk">christina@huset-kbh.dk</a><br>
-                    Tlf: <a href="tel:+45 20491916">+45 20 49 19 16</a></p>
-            </div>
+            <p class="admin"> Christina Ben-Yedidia Lykkegaard <br> Head of Public Relations<br> Mail: <a href="mailto:christina@huset-kbh.dk">christina@huset-kbh.dk</a><br> Tlf: <a href="tel:+45 20491916">+45 20 49 19 16</a></p>
         </div>
 
 
         <div class="column">
             <h2 class="admin">Eventkoordinering og booking</h2>
             <img id="admin_picture" src="laerke_web.jpg" alt="laerke">
-            <div class="txt">
-                <p class="admin">Lærke Harbo<br>
-                    Projektleder<br>
-                    Mail: <a href="mailto:Laerke@huset-kbh.dk">Laerke@huset-kbh.dk</a></p>
-            </div>
+            <p class="admin">Lærke Harbo<br> Projektleder
+                <br> Mail: <a href="mailto:Laerke@huset-kbh.dk">Laerke@huset-kbh.dk</a></p>
         </div>
+
 
         <div class="column">
             <h2 class="admin">Eventkoordinering og booking</h2>
             <img id="admin_picture" src="web-300x300.jpg" alt="alexander">
-            <div class="txt">
-                <p class="admin">Alexander Nitze<br>
-                    Produktionsansvarlig
-                    Mail: <a href="mailto:alexander@huset-kbh.dk">alexander@huset-kbh.dk</a></p>
-            </div>
+
+            <p class="admin">Alexander Nitze<br> Produktionsansvarlig Mail: <a href="mailto:alexander@huset-kbh.dk">alexander@huset-kbh.dk</a></p>
         </div>
+
 
 
         <div class="column">
             <h2 class="admin">Eventkoordinering og booking</h2>
             <img id="admin_picture" src="lars-1-300x300.png" alt="lars">
-            <div class="txt">
-                <p class="admin">Lars Bach Rolaj <br>
-                    Frivilligkoordinator / Afvikler <br>
-                    Mail: <a href="mailto:Lars@huset-kbh.dk">Lars@huset-kbh.dk</a></p>
-            </div>
+
+            <p class="admin">Lars Bach Rolaj <br> Frivilligkoordinator / Afvikler <br> Mail: <a href="mailto:Lars@huset-kbh.dk">Lars@huset-kbh.dk</a></p>
         </div>
 
         <div class="column">
             <h2 class="admin">Eventkoordinering og booking</h2>
             <img id="admin_picture" src="peter_web.jpg" alt="peter">
-            <div class="txt">
-                <p class="admin">Peter Krog Andersen<br>
-                    Musik og Eventansvarlig<br>Mail: <a href="mailto:peter@huset-kbh.dk">peter@huset-kbh.dk</a></p>
-            </div>
+            <p class="admin">Peter Krog Andersen<br> Musik og Eventansvarlig<br>Mail: <a href="mailto:peter@huset-kbh.dk">peter@huset-kbh.dk</a></p>
         </div>
+
 
 
         <div class="column">
             <h2 class="admin">Bar/teknik</h2>
             <img id="admin_picture" src="seb_web.jpg" alt="sebastien">
-            <div class="txt">
-                <p class="admin">Sebastien Marusanne
-                    <br>Barchef / Afvikler<br>Mail: <a href="mailto:seb@huset-kbh.dk">seb@huset-kbh.dk</a></p>
-            </div>
+
+            <p class="admin">Sebastien Marusanne
+                <br>Barchef / Afvikler<br>Mail: <a href="mailto:seb@huset-kbh.dk">seb@huset-kbh.dk</a></p>
         </div>
+
 
 
         <div class="column">
             <h2 class="admin">Bar/teknik</h2>
             <img id="admin_picture" src="web-300x300.jpg" alt="kent">
-            <div class="txt">
-                <p class="admin">Kent Tonsgaard
-                    <br>Afvikler<br>
-                    Mail: <a href="mailto:kent@huset-kbh.dk">kent@huset-kbh.dk</a></p>
-            </div>
+            <p class="admin">Kent Tonsgaard
+                <br>Afvikler<br> Mail: <a href="mailto:kent@huset-kbh.dk">kent@huset-kbh.dk</a></p>
         </div>
+
 
 
         <div class="column">
             <h2 class="admin">Bar/teknik</h2>
             <img id="admin_picture" src="nadeem21.jpg" alt="nadeem">
-            <div class="txt">
-                <p class="admin">Nadeem Malik
-                    <br>Hustekniker<br>Mail: <a href="mailto:nadeem@huset-kbh.dk">nadeem@huset-kbh.dk</a></p>
-            </div>
+
+            <p class="admin">Nadeem Malik
+                <br>Hustekniker<br>Mail: <a href="mailto:nadeem@huset-kbh.dk">nadeem@huset-kbh.dk</a></p>
+
         </div>
 
 
         <div class="column">
             <h2 class="admin">Bar/teknik</h2>
             <img id="admin_picture" src="web-300x300.jpg" alt="carl_emil">
-            <div class="txt">
-                <p class="admin">Carl Emil Amundsen
-                    <br>Teknikerelev</p>
-            </div>
+
+            <p class="admin">Carl Emil Amundsen
+                <br>Teknikerelev</p>
         </div>
+
 
 
         <div class="column">
             <h2 class="admin">Drift</h2>
             <img id="admin_picture" src="ida_web-300x300.jpg" alt="ida">
-            <div class="txt">
-                <p class="admin">Ida Bjørn Jensen<br>
-                    Preproduktion og systemkoordinator<br>
-                    Mail: <a href="mailto:Ida@huset-kbh.dk">Ida@huset-kbh.dk</a></p>
-            </div>
+            <p class="admin">Ida Bjørn Jensen<br> Preproduktion og systemkoordinator<br> Mail: <a href="mailto:Ida@huset-kbh.dk">Ida@huset-kbh.dk</a></p>
         </div>
 
 
         <div class="column">
             <h2 class="admin">Drift</h2>
             <img id="admin_picture" src="vagn_web.jpg" alt="vagn">
-            <div class="txt">
-                <p class="admin">Vagn Groth
-                    <br>Floor Manager / Reception
-                    Mail: <a href="mailto:Vagn@huset-kbh.dk">Vagn@huset-kbh.dk</a></p>
-            </div>
+            <p class="admin">Vagn Groth
+                <br>Floor Manager / Reception Mail: <a href="mailto:Vagn@huset-kbh.dk">Vagn@huset-kbh.dk</a></p>
         </div>
 
         <div class="column">
             <h2 class="admin">Drift</h2>
             <img id="admin_picture" src="web-300x300.jpg" alt="bente">
-            <div class="txt">
-                <p class="admin">Bente Lildballe
-                    <br>Receptionist<br>
-                    Mail: <a href="mailto:EZ4I@kff.kk.dk">EZ4I@kff.kk.dk</a></p>
-            </div>
+            <p class="admin">Bente Lildballe
+                <br>Receptionist<br> Mail: <a href="mailto:EZ4I@kff.kk.dk">EZ4I@kff.kk.dk</a></p>
         </div>
 
         <div class="column">
             <h2 class="admin">Administration</h2>
             <img id="admin_picture" src="eva_web.jpg" alt="eva">
-            <div class="txt">
-                <p class="admin">Eva Hermansen
-                    <br>Økonomi
-                    <br>Mail: <a href="mailto:Evaher@kff.kk.dk">Evaher@kff.kk.dk</a></p>
-            </div>
+            <p class="admin">Eva Hermansen
+                <br>Økonomi
+                <br>Mail: <a href="mailto:Evaher@kff.kk.dk">Evaher@kff.kk.dk</a></p>
         </div>
 
 
         <div class="column">
             <h2 class="admin">Administration</h2>
             <img id="admin_picture" src="web-300x300.jpg" alt="maria">
-            <div class="txt">
-                <p class="admin">Maria Carelse
-                    <br>HR-medarbejder<br>
-                    Mail: <a href="mailto:FI5H@kff.kk.dk">FI5H@kff.kk.dk</a></p>
-            </div>
+            <p class="admin">Maria Carelse
+                <br>HR-medarbejder<br> Mail: <a href="mailto:FI5H@kff.kk.dk">FI5H@kff.kk.dk</a></p>
         </div>
+
 
         <div class="column">
             <h2 class="admin">Administration</h2>
             <img id="admin_picture" src="web-300x300.jpg" alt="leila">
-            <div class="txt">
-                <p class="admin">Leila Hjort<br>
-                    Regnskabsmedarbejder / DIT:KBH<br>
-                    Mail: <a href="mailto:FB2R@kff.kk.dk">FB2R@kff.kk.dk</a></p>
-            </div>
+
+            <p class="admin">Leila Hjort<br> Regnskabsmedarbejder / DIT:KBH<br> Mail: <a href="mailto:FB2R@kff.kk.dk">FB2R@kff.kk.dk</a></p>
         </div>
+
 
 
         <div class="column">
             <h2 class="admin">Ledelse</h2>
             <img id="admin_picture" src="web-300x300.jpg" alt="sara">
-            <div class="txt">
-                <p class="admin">Sara Bech Jakobsen
-                    <br>Chef / DIT:KBH
-                    <br>Mail: <a href="mailto:Sabech@kff.kk.dk">Sabech@kff.kk.dk</a></p>
-            </div>
+            <p class="admin">Sara Bech Jakobsen
+                <br>Chef / DIT:KBH
+                <br>Mail: <a href="mailto:Sabech@kff.kk.dk">Sabech@kff.kk.dk</a></p>
         </div>
 
 

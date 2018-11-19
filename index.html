@@ -55,6 +55,7 @@
 </head>
 
 <body>
+<?php include "header.html"; ?>
 
     <section id="splash">
         <!-- indsæt koden til et responsive image her.
@@ -66,9 +67,9 @@
              * desktop.jpg          1920x1080
         -->
         <picture>
-            <source media="(min-width:1920px) and (orientation: landscape)" srcset="splash/desktop.jpg">
-            <source media="(min-width:1024px) and (orientation: landscape)" srcset="splash/tablet.jpg">
-            <source media="(min-width:627px) and (orientation: landscape)" srcset="splash/mobile.jpg">
+            <source media="(min-width:1920px) and (orientation: landscape)" srcset="desktop.png">
+            <source media="(min-width:1024px) and (orientation: landscape)" srcset="tablet.png">
+            <source media="(min-width:627px) and (orientation: landscape)" srcset="mobile.png">
             <img src="splash/mobile.jpg" alt="splash" style="width: 100%;">
         </picture>
     </section>
@@ -204,7 +205,7 @@
 
     </script>
 
-
+<?php include "footer.html"; ?>
 </body>
 
 </html>

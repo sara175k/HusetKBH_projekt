@@ -3,11 +3,68 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <title></title>
-</head>
+
+<style>
+    footer {
+        max-width: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8em;
+    }
+
+    body {
+        font-family: 'Lato';
+    }
+
+    input {
+        padding: .5em;
+    }
+
+    .txt {
+        font-family: 'Lato';
+    }
+
+    .tilmeld {
+        background-color: rgba(76, 76, 76, 0.8);
+        border-color: rgba(76, 76, 76, 0.8);
+        color: white;
+        border: none;
+    }
+
+    h2{
+        padding: 20px;
+                text-align: center;
+                margin-top: 50px;
+                font-size: 26px;
+                color: black;
+                line-height: 1.2;
+                letter-spacing: 6px;
+                position: relative;
+                font-weight: 400;
+    }
+
+    p{
+        text-align: left;
+                font-size: 14px;
+                width: 500px;
+                margin: 30px auto;
+                color: #a4a4a4;
+                line-height: 26px;
+                letter-spacing: 0;
+                position: relative;
+                font-weight: 300;
+    }
+
+</style>
+
+    </head>
 
 <body>
     <footer>
+
         <form action="action_page.php">
             <div class="container">
                 <h2>Huset KBHs nyhedsbrev</h2>
@@ -27,6 +84,24 @@
                 <input type="submit" value="Tilmeld dig">
             </div>
         </form>
+    <form action="action_page.php">
+  <div class="container3">
+    <h2>Huset KBHs nyhedsbrev</h2>
+    <p>Hold dig opdateret på de nyeste events og info.</p>
+  </div>
+
+  <div class="container3">
+    <input type="text" placeholder="Navn" name="name" required class="txt">
+    <input type="text" placeholder="Email-adresse" name="mail" required class="txt">
+    <label><br><br>
+      <input type="checkbox" checked="checked" name="subscribe"> Nyhedsbrev
+    </label>
+  </div>
+<br>
+  <div class="container3">
+    <input type="submit" value="Tilmeld dig" class="tilmeld">
+  </div>
+</form>
     </footer>
 
 </body>
