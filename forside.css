@@ -82,11 +82,16 @@ p,
     /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
+    width: 10em;
 }
 
 .menu-item:hover {
     color: white;
-    background-color: rgba(76, 76, 76, 0.8)
+    background-color: rgba(76, 76, 76, 0.8);
+}
+
+.menu-item:focus {
+    background-color: rgba(76, 76, 76, 0.8);
 }
 
 main {
