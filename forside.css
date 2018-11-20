@@ -104,7 +104,7 @@ h4{
     padding: 15px 32px;
     margin: 4px 2px;
     border-radius: 20px;
-    background-color: white;
+    background-color: rgb(157, 157, 156);
     -webkit-transition-duration: 0.4s;
     /* Safari */
     transition-duration: 0.4s;
@@ -113,7 +113,7 @@ h4{
 }
 
 .menu-item:hover {
-    color: white;
+    color: rgb(157, 157, 156);
     background-color: black;
 }
 
