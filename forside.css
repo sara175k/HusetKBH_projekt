@@ -23,31 +23,58 @@ main {
     font-family: 'Lato';
 }
 
-h1,
-h3,
-h2,
-h4 {
+h1{
     font-family: 'Lato';
+    padding: 20px;
+                text-align: center;
+                margin-top: 50px;
+                font-size: 26px;
+                color: black;
+                line-height: 1.2;
+                letter-spacing: 6px;
+                position: relative;
+                font-weight: 400;
 }
 
-h1,
+
 h2,
 h3,
-h4,
-p {
-    padding-left: 20px;
-    padding-right: 20px;
+h4{
+   padding: 20px;
+                text-align: left;
+                margin-top: 10px;
+                font-size: 26px;
+                color: black;
+                line-height: 1.2;
+                letter-spacing: 6px;
+                position: relative;
+                font-weight: 400;
 }
 
-p,
-.kategorier {
-    font-size: 0.9em;
-}
+
+
+
+
+ p, div.kategorier{
+            text-align: left;
+                font-size: 14px;
+                width: 400px;
+                margin: 30px auto;
+                color: #a4a4a1;
+                line-height: 26px;
+                letter-spacing: 0;
+                position: relative;
+                font-weight: 300;
+        }
+
 
 .kategorier {
     padding-left: 20px;
-    padding-bottom: 20px
+    padding-bottom: 20px;
+
+
 }
+
 
 
 /*GENERELT SLUT*/
@@ -87,11 +114,11 @@ p,
 
 .menu-item:hover {
     color: white;
-    background-color: rgba(76, 76, 76, 0.8);
+    background-color: black;
 }
 
 .menu-item:focus {
-    background-color: rgba(76, 76, 76, 0.8);
+    background-color:lightgray;
 }
 
 main {
@@ -102,7 +129,7 @@ main {
 article {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgba(76, 76, 76, 0.8);
+    background-color: rgba();
     border-radius: 1em;
     margin-top: 3em;
 }
@@ -119,6 +146,8 @@ img {
     margin: 1em 0 0;
 
 }
+
+
 
 /*EVENTBOKSE/FLEX SLUT*/
 
@@ -137,7 +166,7 @@ img {
     article {
         display: flex;
         flex-wrap: nowrap;
-        background-color: rgba(76, 76, 76, 0.8);
+        background-color: rgba();
         border-radius: 1em;
         margin-top: 8em;
     }
@@ -145,6 +174,14 @@ img {
     .box {
         flex-grow: 1;
         flex-basis: 500px;
+    }
+    hr{
+        color: black;
+                margin-top: 30px;
+                background-color: black;
+                height: 1px;
+                width: 500px;
+                border: 0px;
     }
 }
 
